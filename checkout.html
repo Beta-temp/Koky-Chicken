@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>إتمام الطلب | Koky Chicken</title>
+<meta name="robots" content="noindex"><!-- страница оформления не нужна в поиске -->
+<meta name="theme-color" content="#E31E24">
+<link rel="icon" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Cairo:wght@500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/checkout.css">
+<!-- GA4: тот же Measurement ID, что и на других страницах (событие purchase отправляет checkout.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo display" aria-label="Koky Chicken"><span class="logo-mark">🍗</span><span>Koky Chicken</span></a>
+    <nav class="nav" aria-label="Main">
+      <a href="menu.html" data-i18n="nav_menu">القائمة</a>
+      <a href="index.html#about" data-i18n="nav_about">من نحن</a>
+      <a href="index.html#contact" data-i18n="nav_contact">تواصل معنا</a>
+    </nav>
+    <div class="header-actions">
+      <button class="lang-switch" id="langBtn" type="button" aria-label="Language">EN</button>
+      <a href="#cart" class="cart-btn" id="cartBtn">🛒<span class="cart-count" id="cartCount">0</span></a>
+    </div>
+  </div>
+</header>
+
+<section class="menu-hero co-hero"><div class="container"><h1 class="display" data-i18n="co_title">إتمام الطلب</h1></div></section>
+
+<main class="co-body">
+  <div class="container">
+
+    <!-- Корзина пуста -->
+    <div class="co-empty" id="emptyBox" hidden>
+      <div class="big">🛒</div><p data-i18n="co_empty">السلة فاضية</p>
+      <a class="btn btn-gold" href="menu.html" data-i18n="co_browse">تصفح القائمة</a>
+    </div>
+
+    <!-- Спасибо -->
+    <div class="co-thanks" id="thanksBox" hidden role="status">
+      <div class="big">🎉</div>
+      <h2 class="display" data-i18n="co_thanks">شكراً لطلبك!</h2>
+      <p data-i18n="co_thanks_sub">تم إرسال طلبك. هنتواصل معاك على واتساب لتأكيده.</p>
+      <p class="muted" id="thanksId"></p>
+      <a class="btn btn-gold" id="waManual" href="#" target="_blank" rel="noopener" hidden data-i18n="co_open_wa">افتح واتساب</a>
+      <a class="btn btn-ghost" href="index.html" data-i18n="co_home">الرئيسية</a>
+      <p class="muted" id="redirectNote"></p>
+    </div>
+
+    <div class="co-grid" id="coGrid">
+      <!-- ФОРМА -->
+      <form id="orderForm" class="co-form" novalidate>
+        <fieldset class="co-field">
+          <legend data-i18n="f_type">نوع الطلب</legend>
+          <div class="seg">
+            <label><input type="radio" name="type" value="pickup" checked><span data-i18n="f_pickup">🏃 استلام من المطعم</span></label>
+            <label><input type="radio" name="type" value="delivery"><span data-i18n="f_delivery">🛵 توصيل</span></label>
+          </div>
+        </fieldset>
+
+        <div class="co-field">
+          <label for="fName" data-i18n="f_name">الاسم</label>
+          <input id="fName" name="name" type="text" autocomplete="name" maxlength="60" required>
+          <p class="err" id="eName" aria-live="polite"></p>
+        </div>
+
+        <div class="co-field">
+          <label for="fPhone" data-i18n="f_phone">رقم الموبايل</label>
+          <input id="fPhone" name="phone" type="tel" inputmode="tel" autocomplete="tel" maxlength="20" dir="ltr" placeholder="+20 1XX XXX XXXX" required>
+          <p class="err" id="ePhone" aria-live="polite"></p>
+        </div>
+
+        <div class="co-field" id="addrField" hidden>
+          <label for="fAddr" data-i18n="f_addr">عنوان التوصيل</label>
+          <textarea id="fAddr" name="address" rows="2" maxlength="200" autocomplete="street-address"></textarea>
+          <p class="err" id="eAddr" aria-live="polite"></p>
+        </div>
+
+        <div class="co-field">
+          <label for="fNote"><span data-i18n="f_note">ملاحظات على الطلب</span> <small data-i18n="f_opt">(اختياري)</small></label>
+          <textarea id="fNote" name="comment" rows="2" maxlength="300"></textarea>
+        </div>
+
+        <div class="pay-note">💵 <span data-i18n="f_pay">الدفع: كاش عند الاستلام</span></div>
+
+        <p class="err big-err" id="eForm" aria-live="polite"></p>
+        <button class="btn btn-gold submit" id="submitBtn" type="submit"><span data-i18n="f_submit">تأكيد الطلب</span><span id="submitTotal"></span></button>
+      </form>
+
+      <!-- ВАШ ЗАКАЗ -->
+      <aside class="co-summary" id="summary" aria-labelledby="sumTitle">
+        <h2 class="display" id="sumTitle" data-i18n="s_title">طلبك</h2>
+        <ul id="sumList"></ul>
+        <div class="sum-total"><span data-i18n="s_total">الإجمالي</span><strong id="sumTotal"></strong></div>
+        <button class="link-btn" type="button" data-cart-open data-i18n="s_edit">تعديل السلة</button>
+      </aside>
+    </div>
+  </div>
+</main>
+
+<script src="js/koky.js"></script>
+<script src="js/checkout.js"></script>
+</body>
+</html>

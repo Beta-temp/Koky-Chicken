@@ -1,0 +1,49 @@
+/* ===== checkout.css — страница оформления заказа (поверх style.css) ===== */
+.co-hero{padding:1.6rem 0 2rem}
+.co-body{background:var(--cream);color:var(--black);padding:2rem 0 5rem;min-height:70vh}
+.co-grid{display:grid;gap:1.5rem}
+.co-grid[hidden]{display:none}
+@media(min-width:860px){.co-grid{grid-template-columns:1.2fr .8fr;align-items:start}.co-summary{position:sticky;top:calc(var(--header-h) + 1rem)}}
+/* на мобильном «Ваш заказ» показываем выше формы */
+@media(max-width:859px){.co-summary{order:-1}}
+
+.co-form,.co-summary,.co-empty,.co-thanks{background:var(--white);border:3px solid var(--black);border-radius:var(--radius);box-shadow:6px 6px 0 var(--black);padding:1.4rem}
+.co-field{border:0;margin-bottom:1.1rem;display:grid;gap:.4rem}
+.co-field > label,.co-field > legend{font-weight:900;font-size:1.05rem}
+.co-field legend{margin-bottom:.4rem;padding:0}
+.co-field small{font-weight:500;color:#777}
+.co-field input[type=text],.co-field input[type=tel],.co-field textarea{width:100%;font:inherit;padding:.8rem 1rem;border:2px solid var(--black);border-radius:12px;background:var(--cream);transition:border-color .2s,box-shadow .2s}
+.co-field input:focus,.co-field textarea:focus{outline:none;border-color:var(--red);box-shadow:0 0 0 4px rgba(227,30,36,.2)}
+.co-field.invalid input,.co-field.invalid textarea{border-color:var(--red);background:#fff0f0}
+.err{color:var(--red);font-weight:700;font-size:.88rem;min-height:0}
+.big-err{font-size:1rem;margin-bottom:.6rem}
+
+/* Переключатель Pickup / Delivery */
+.seg{display:grid;grid-template-columns:1fr 1fr;gap:.6rem}
+.seg label{position:relative}
+.seg input{position:absolute;opacity:0;inset:0;cursor:pointer}
+.seg span{display:block;text-align:center;padding:.8rem .4rem;border:2px solid var(--black);border-radius:14px;font-weight:900;background:var(--white);transition:background .15s,color .15s}
+.seg input:checked + span{background:var(--black);color:var(--gold)}
+.seg input:focus-visible + span{outline:3px solid var(--red);outline-offset:2px}
+
+.pay-note{background:var(--gold);border:2px solid var(--black);border-radius:12px;padding:.7rem 1rem;font-weight:900;margin-bottom:1.1rem}
+.submit{width:100%;justify-content:space-between;font-size:1.15rem}
+.submit:disabled{opacity:.6;cursor:wait}
+
+/* Сводка */
+.co-summary h2{color:var(--red);font-size:2rem;margin-bottom:.6rem}
+.co-summary ul{list-style:none;display:grid;gap:.7rem;margin-bottom:1rem}
+.co-summary li{display:flex;justify-content:space-between;gap:.8rem;padding-bottom:.7rem;border-bottom:2px dashed #d9c99a}
+.co-summary li small{display:block;color:#666;font-size:.8rem}
+.co-summary li b{white-space:nowrap}
+.sum-total{display:flex;justify-content:space-between;font-size:1.35rem;font-weight:900;margin-bottom:.4rem}
+.sum-total strong{color:var(--red)}
+
+/* Пусто / спасибо */
+.co-empty,.co-thanks{text-align:center;display:grid;gap:1rem;justify-items:center;max-width:520px;margin:0 auto;padding:2.5rem 1.4rem}
+.co-empty[hidden],.co-thanks[hidden]{display:none}
+.big{font-size:4rem;line-height:1}
+.co-thanks h2{font-size:2.4rem;color:var(--red)}
+.co-thanks .btn-ghost{color:var(--black);border-color:var(--black)}
+.co-thanks .btn-ghost:hover{background:var(--black);color:var(--gold)}
+.muted{color:#777;font-size:.9rem;font-weight:700}
