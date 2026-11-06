@@ -160,7 +160,7 @@
       "id": "broasted-family-6-pcs",
       "cat": "broasted-chicken-meals",
       "price": 400,
-      "img": "img/category-icons/broasted-chicken-meals.svg",
+      "img": "img/dishes/broasted-family-8-pcs.jpg",
       "name": {
         "ar": "وجبة عائلية ٦ قطع",
         "en": "Family Meal — 6 Pcs"
@@ -287,7 +287,7 @@
       "id": "extra-chicken-strip",
       "cat": "chicken-strips-meals",
       "price": 50,
-      "img": "img/category-icons/chicken-strips-meals.svg",
+      "img": "img/dishes/strips-2-pcs.jpg",
       "name": {
         "ar": "ستريبس إضافي",
         "en": "Extra Chicken Strip"
@@ -301,7 +301,7 @@
       "id": "plain-rice",
       "cat": "chicken-strips-meals",
       "price": 70,
-      "img": "img/category-icons/chicken-strips-meals.svg",
+      "img": "img/dishes/broasted-2-pcs.jpg",
       "name": {
         "ar": "أرز سادة",
         "en": "Plain Rice"
@@ -315,7 +315,7 @@
       "id": "rice-2-strips-sauce",
       "cat": "chicken-strips-meals",
       "price": 160,
-      "img": "img/category-icons/chicken-strips-meals.svg",
+      "img": "img/dishes/strips-2-pcs.jpg",
       "name": {
         "ar": "أرز + ٢ ستريبس + صوص",
         "en": "Rice + 2 Chicken Strips + Sauce"
@@ -329,7 +329,7 @@
       "id": "potato-chicken-magic",
       "cat": "chicken-strips-meals",
       "price": 140,
-      "img": "img/category-icons/chicken-strips-meals.svg",
+      "img": "img/dishes/koky-single-combo.jpg",
       "name": {
         "ar": "بوتاتو تشيكن ماجيك",
         "en": "Potato Chicken Magic"
@@ -673,7 +673,7 @@
       "id": "sweet-chili-sauce",
       "cat": "extras",
       "price": 30,
-      "img": "img/category-icons/extras.svg",
+      "img": "img/dishes/ranch-or-bbq-sauce.jpg",
       "name": {
         "ar": "صوص سويت تشيلي",
         "en": "Sweet Chili Sauce"
@@ -687,7 +687,7 @@
       "id": "garlic-sauce",
       "cat": "extras",
       "price": 30,
-      "img": "img/category-icons/extras.svg",
+      "img": "img/dishes/cheese-sauce.jpg",
       "name": {
         "ar": "صوص ثومية",
         "en": "Garlic Sauce"
