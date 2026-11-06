@@ -15,14 +15,14 @@ const REDIRECT_DELAY_MS = 6000;                // через сколько ве
   const TXT = {
     ar: { nav_menu:'القائمة', nav_about:'من نحن', nav_contact:'تواصل معنا', co_title:'إتمام الطلب', co_empty:'السلة فاضية', co_browse:'تصفح القائمة',
           co_thanks:'شكراً لطلبك!', co_thanks_sub:'تم إرسال طلبك. هنتواصل معاك على واتساب لتأكيده.', co_open_wa:'افتح واتساب', co_home:'الرئيسية',
-          f_type:'نوع الطلب', f_pickup:'🏃 استلام من المطعم', f_delivery:'🛵 توصيل', f_name:'الاسم', f_phone:'رقم الموبايل', f_addr:'عنوان التوصيل',
+          f_type:'نوع الطلب', f_pickup:'استلام من المطعم', f_delivery:'توصيل', f_name:'الاسم', f_phone:'رقم الموبايل', f_addr:'عنوان التوصيل',
           f_note:'ملاحظات على الطلب', f_opt:'(اختياري)', f_pay:'الدفع: كاش عند الاستلام', f_submit:'تأكيد الطلب',
           s_title:'طلبك', s_total:'الإجمالي', s_edit:'تعديل السلة',
           e_name:'اكتب اسمك', e_phone:'اكتب رقم موبايل صحيح', e_addr:'اكتب عنوان التوصيل', e_empty:'السلة فاضية. أضف وجبة الأول.',
           redirect:'هنرجعك للرئيسية خلال لحظات…', order:'رقم الطلب', page_title:'إتمام الطلب | Koky Chicken' },
     en: { nav_menu:'Menu', nav_about:'About', nav_contact:'Contact', co_title:'Checkout', co_empty:'Your cart is empty', co_browse:'Browse menu',
           co_thanks:'Thank you for your order!', co_thanks_sub:'Your order was sent. We will contact you on WhatsApp to confirm.', co_open_wa:'Open WhatsApp', co_home:'Home',
-          f_type:'Order type', f_pickup:'🏃 Pickup', f_delivery:'🛵 Delivery', f_name:'Name', f_phone:'Phone', f_addr:'Delivery address',
+          f_type:'Order type', f_pickup:'Pickup', f_delivery:'Delivery', f_name:'Name', f_phone:'Phone', f_addr:'Delivery address',
           f_note:'Order notes', f_opt:'(optional)', f_pay:'Payment: Cash on delivery', f_submit:'Confirm order',
           s_title:'Your order', s_total:'Total', s_edit:'Edit cart',
           e_name:'Please enter your name', e_phone:'Please enter a valid phone number', e_addr:'Please enter the delivery address', e_empty:'Your cart is empty. Add a meal first.',
@@ -109,17 +109,17 @@ const REDIRECT_DELAY_MS = 6000;                // через сколько ве
   /* Красивый текст для WhatsApp (звёздочки = жирный в WhatsApp) */
   function waText(o) {
     const lines = [
-      '🍗 *New Order - Koky Chicken*',
-      `🧾 Order: ${o.orderId}`,
-      `👤 Name: ${o.name}`,
-      `📞 Phone: ${o.phone}`,
-      `🚚 Type: ${o.type}`
+      '*NEW ORDER — KOKY CHICKEN*',
+      `Order: ${o.orderId}`,
+      `Customer: ${o.name}`,
+      `Phone: ${o.phone}`,
+      `Order type: ${o.type}`
     ];
-    if (o.address) lines.push(`📍 Address: ${o.address}`);
-    if (o.comment) lines.push(`📝 Note: ${o.comment}`);
+    if (o.address) lines.push(`Address: ${o.address}`);
+    if (o.comment) lines.push(`Note: ${o.comment}`);
     lines.push('---');
     o.items.forEach(i => lines.push(`${i.qty}x ${i.name}${i.options.length ? ` (${i.options.join(', ')})` : ''} - ${i.lineTotal} ${o.currency}`));
-    lines.push('---', `💰 *Total: ${o.total} ${o.currency}*`, '💵 Payment: Cash on delivery');
+    lines.push('---', `*Total: ${o.total} ${o.currency}*`, 'Payment: Cash on delivery');
     return lines.join('\n');
   }
 
