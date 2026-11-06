@@ -20,7 +20,7 @@
 
 <header class="site-header">
   <div class="container">
-    <a href="index.html" class="logo display" aria-label="Koky Chicken"><span class="logo-mark">🍗</span><span>Koky Chicken</span></a>
+    <a href="index.html" class="logo display" aria-label="Koky Chicken"><svg viewBox="0 0 64 64" class="logo-mark" aria-hidden="true"><use href="img/icons.svg#chicken"></use></svg><span>Koky Chicken</span></a>
     <nav class="nav" aria-label="Main">
       <a href="menu.html" data-i18n="nav_menu">القائمة</a>
       <a href="index.html#about" data-i18n="nav_about">من نحن</a>
@@ -28,7 +28,7 @@
     </nav>
     <div class="header-actions">
       <button class="lang-switch" id="langBtn" type="button" aria-label="Language">EN</button>
-      <a href="#cart" class="cart-btn" id="cartBtn">🛒<span class="cart-count" id="cartCount">0</span></a>
+      <a href="#cart" class="cart-btn" id="cartBtn"><svg viewBox="0 0 64 64" class="cart-icon" aria-hidden="true"><use href="img/icons.svg#cart"></use></svg><span class="cart-count" id="cartCount">0</span></a>
     </div>
   </div>
 </header>
@@ -40,13 +40,13 @@
 
     <!-- Корзина пуста -->
     <div class="co-empty" id="emptyBox" hidden>
-      <div class="big">🛒</div><p data-i18n="co_empty">السلة فاضية</p>
+      <div class="big"><svg viewBox="0 0 64 64" class="empty-cart-icon" aria-hidden="true"><use href="img/icons.svg#cart"></use></svg></div><p data-i18n="co_empty">السلة فاضية</p>
       <a class="btn btn-gold" href="menu.html" data-i18n="co_browse">تصفح القائمة</a>
     </div>
 
     <!-- Спасибо -->
     <div class="co-thanks" id="thanksBox" hidden role="status">
-      <div class="big">🎉</div>
+      <div class="big order-success-mark">ORDER<br>RECEIVED</div>
       <h2 class="display" data-i18n="co_thanks">شكراً لطلبك!</h2>
       <p data-i18n="co_thanks_sub">تم إرسال طلبك. هنتواصل معاك على واتساب لتأكيده.</p>
       <p class="muted" id="thanksId"></p>
@@ -61,8 +61,8 @@
         <fieldset class="co-field">
           <legend data-i18n="f_type">نوع الطلب</legend>
           <div class="seg">
-            <label><input type="radio" name="type" value="pickup" checked><span data-i18n="f_pickup">🏃 استلام من المطعم</span></label>
-            <label><input type="radio" name="type" value="delivery"><span data-i18n="f_delivery">🛵 توصيل</span></label>
+            <label><input type="radio" name="type" value="pickup" checked><span data-i18n="f_pickup">استلام من المطعم</span></label>
+            <label><input type="radio" name="type" value="delivery"><span data-i18n="f_delivery">توصيل</span></label>
           </div>
         </fieldset>
 
@@ -89,7 +89,7 @@
           <textarea id="fNote" name="comment" rows="2" maxlength="300"></textarea>
         </div>
 
-        <div class="pay-note">💵 <span data-i18n="f_pay">الدفع: كاش عند الاستلام</span></div>
+        <div class="pay-note"><span data-i18n="f_pay">الدفع: كاش عند الاستلام</span></div>
 
         <p class="err big-err" id="eForm" aria-live="polite"></p>
         <button class="btn btn-gold submit" id="submitBtn" type="submit"><span data-i18n="f_submit">تأكيد الطلب</span><span id="submitTotal"></span></button>
