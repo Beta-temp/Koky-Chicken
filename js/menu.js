@@ -6,7 +6,7 @@
   function render() {
     const tabs = [{ id: 'all', name: { ar: Koky.DICT.ar.all, en: Koky.DICT.en.all } }, ...MENU.categories];
     $('#catTabs').innerHTML = tabs.map(c =>
-      `<button class="cat-tab" data-cat="${c.id}" aria-pressed="${c.id === activeCat}">${c.icon ? `<img class="cat-icon" src="${Koky.esc(c.icon)}" alt="" loading="lazy">` : ''}${Koky.esc(Koky.tr(c.name))}</button>`).join('');
+      `<button class="cat-tab" data-cat="${c.id}" aria-pressed="${c.id === activeCat}">${(() => { const icons = { 'broasted-chicken-meals':'chicken', 'chicken-strips-meals':'strips', 'burgers-sandwiches':'burger', pizza:'pizza', pasta:'pasta', extras:'extras', drinks:'drinks' }; const id = icons[c.id] || 'chicken'; return `<svg class="cat-icon" viewBox="0 0 64 64" aria-hidden="true"><use href="img/icons.svg#${id}"></use></svg>`; })()}${Koky.esc(Koky.tr(c.name))}</button>`).join('');
     const html = MENU.categories.filter(c => activeCat === 'all' || c.id === activeCat).map(c => {
       const items = MENU.items.filter(i => i.cat === c.id && !i.hidden);
       return items.length ? `<section class="menu-cat" id="cat-${c.id}"><h2 class="display">${Koky.esc(Koky.tr(c.name))}</h2><div class="cards">${items.map(Koky.cardHTML).join('')}</div></section>` : '';
