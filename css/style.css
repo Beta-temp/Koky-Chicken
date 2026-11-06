@@ -209,3 +209,23 @@ body.modal-open{overflow:hidden}
 /* логотип внутри круга в Hero */
 .hero-art{overflow:hidden;padding:0;background:#0b0b0b}
 .hero-art img{width:100%;height:100%;object-fit:cover}
+
+/* ===== Custom SVG icon system (no emoji glyphs) ===== */
+.logo-mark{width:40px;height:40px;display:block;fill:none;overflow:visible}
+.logo-mark use{fill:initial}
+.cart-btn{font-size:0}
+.cart-icon{width:24px;height:24px;display:block}
+.hero-tag{display:inline-flex;align-items:center;gap:.55rem}
+.hero-tag svg{width:20px;height:20px;flex:0 0 20px}
+.feature .ico{width:48px;height:48px;flex:0 0 48px;display:grid;place-items:center}
+.feature .ico svg{width:100%;height:100%}
+.about-art svg{width:min(76%,360px);height:auto;max-height:310px}
+.contact-list li{display:flex;align-items:center;gap:.75rem}
+.contact-list li svg{width:24px;height:24px;flex:0 0 24px}
+.cat-tab{display:inline-flex;align-items:center;gap:.5rem}
+.cat-icon{width:28px;height:28px;object-fit:contain;display:block}
+.fallback-food-icon{width:76%;height:76%;max-width:112px;max-height:112px}
+.drawer-empty .big{display:grid;place-items:center}
+.empty-cart-icon{width:88px;height:88px}
+.trash-icon{width:18px;height:18px;display:block}
+.rm-btn{display:grid;place-items:center}
