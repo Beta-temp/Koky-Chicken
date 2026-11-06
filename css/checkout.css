@@ -47,3 +47,21 @@
 .co-thanks .btn-ghost{color:var(--black);border-color:var(--black)}
 .co-thanks .btn-ghost:hover{background:var(--black);color:var(--gold)}
 .muted{color:#777;font-size:.9rem;font-weight:700}
+
+/* Checkout follows the Koky premium visual identity */
+.co-hero{background:radial-gradient(ellipse at 80% 40%,#4a210f,transparent 45%),linear-gradient(110deg,#1a0f09,#2b160c);padding:2rem 0}
+.co-hero h1{color:#fff4e4;text-shadow:none;font-size:clamp(2.3rem,6vw,4rem)}
+.co-body{background:#f4e5ca;color:#24150d;padding:2.4rem 0 5rem}
+.co-form,.co-summary,.co-empty,.co-thanks{background:#fffaf1;border:1px solid #e3cba7;border-radius:20px;box-shadow:0 14px 36px #44250d17;padding:clamp(1rem,3vw,1.7rem)}
+.co-field input[type=text],.co-field input[type=tel],.co-field textarea{background:#f7eddd;border:1px solid #d7c2a4;border-radius:12px}
+.co-field input:focus,.co-field textarea:focus{border-color:#c93220;box-shadow:0 0 0 4px #c9322018}
+.co-field.invalid input,.co-field.invalid textarea{border-color:#c93220;background:#fff0ec}
+.seg span{background:#fffaf1;border:1px solid #d7c2a4}
+.seg input:checked+span{background:#21130c;color:#f4c45a;border-color:#21130c}
+.pay-note{background:#f7d77d;border:1px solid #d9a92e;border-radius:12px}
+.co-summary h2{color:#a72b1b}
+.co-thanks h2{color:#a72b1b}
+.co-thanks .btn-ghost{color:#24150d;border-color:#24150d}
+.co-thanks .btn-ghost:hover{background:#24150d;color:#f4c45a}
+.co-empty .big{display:grid;place-items:center}
+.co-empty .empty-cart-icon{width:76px;height:76px}
