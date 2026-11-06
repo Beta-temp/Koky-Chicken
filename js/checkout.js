@@ -2,7 +2,7 @@
 
 /* ---------- НАСТРОЙКИ (меняйте здесь) ---------- */
 const WHATSAPP_NUMBER = '201207801998';        // международный формат без + и пробелов (+20 120 780 1998)
-const GOOGLE_SHEET_WEBHOOK_URL = '';           // URL веб-приложения Apps Script (…/exec). Пусто = в таблицу не отправляем
+const GOOGLE_SHEET_WEBHOOK_URL = 'https://script.google.com/macros/s/AKfy.../exec';           // URL веб-приложения Apps Script (…/exec). Пусто = в таблицу не отправляем
 const ORDER_LANG = 'en';                       // язык текста заказа для кухни: 'en' или 'ar'
 const CURRENCY = 'EGP';
 const REDIRECT_DELAY_MS = 6000;                // через сколько вернуть на главную после заказа
