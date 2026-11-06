@@ -26,7 +26,7 @@
 
   /* ---------- рендер ---------- */
   function itemHTML(it, idx) {
-    const img = it.img ? `<img src="${esc(it.img)}" alt="">` : `<span class="ph">${esc(it.emoji || '🍽')}</span>`;
+    const img = it.img ? `<img src="${esc(it.img)}" alt="">` : `<span class="ph"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="img/icons.svg#chicken"></use></svg></span>`;
     const catOpts = M.categories.map(c => `<option value="${esc(c.id)}" ${c.id === it.cat ? 'selected' : ''}>${esc(c.name.en || c.id)}</option>`).join('');
     const mods = Object.keys(M.modifiers).map(k => `<label><input type="checkbox" data-i="${idx}" data-mod="${esc(k)}" ${(it.mods || []).includes(k) ? 'checked' : ''}> ${esc(M.modifiers[k].name.en || k)}</label>`).join('') || '<small>no modifier groups defined</small>';
     return `<details class="it ${it.hidden ? 'hid' : ''}" data-id="${esc(it.id)}" ${openIds.has(it.id) ? 'open' : ''}>
@@ -41,7 +41,7 @@
         <label class="f">Photo path<input type="text" data-i="${idx}" data-f="img" value="${esc(it.img || '')}" placeholder="img/dishes/name.jpg"></label>
         <label class="f">ID (unique, latin)<input type="text" data-i="${idx}" data-f="id" value="${esc(it.id)}"></label>
         <div class="f wide chk"><label><input type="checkbox" data-i="${idx}" data-f="hit" ${it.hit ? 'checked' : ''}> ⭐ Best seller (shown on homepage, max 4)</label>
-          <label><input type="checkbox" data-i="${idx}" data-f="hidden" ${it.hidden ? 'checked' : ''}> 🙈 Hidden (sold out)</label></div>
+          <label><input type="checkbox" data-i="${idx}" data-f="hidden" ${it.hidden ? 'checked' : ''}> Hidden (sold out)</label></div>
         <div class="f wide"><span>Options shown when ordering</span><div class="chk">${mods}</div></div>
         <div class="row-act"><button class="btn btn-ghost sm" type="button" data-dup="${idx}">Duplicate</button><button class="btn btn-red sm" type="button" data-del="${idx}">Delete</button></div>
       </div></details>`;
@@ -108,7 +108,7 @@
     const b = e.target.closest('button'); if (!b) return;
     if (b.id === 'addItem') {
       const n = M.items.filter(i => i.id.startsWith('new-item')).length + 1, id = 'new-item-' + n;
-      M.items.unshift({ id, cat: (M.categories[0] || {}).id || '', price: 0, img: null, emoji: '🍗', name: { ar: '', en: 'New item' }, desc: { ar: '', en: '' } });
+      M.items.unshift({ id, cat: (M.categories[0] || {}).id || '', price: 0, img: null, name: { ar: '', en: 'New item' }, desc: { ar: '', en: '' } });
       openIds.add(id); setDirty(true); q = ''; renderItems(); document.querySelector(`details[data-id="${id}"]`).scrollIntoView({ block: 'center' });
     } else if (b.dataset.del !== undefined) {
       const it = M.items[+b.dataset.del]; if (confirm(`Delete “${it.name.en || it.id}”?`)) { M.items.splice(+b.dataset.del, 1); setDirty(true); renderItems(); }
@@ -116,7 +116,7 @@
       const c = JSON.parse(JSON.stringify(M.items[+b.dataset.dup])); c.id += '-copy'; c.hit = false; openIds.add(c.id);
       M.items.splice(+b.dataset.dup + 1, 0, c); setDirty(true); renderItems();
     } else if (b.id === 'addCat') {
-      M.categories.push({ id: 'new-category-' + (M.categories.length + 1), icon: '🍽', name: { ar: '', en: 'New category' } }); setDirty(true); renderCats();
+      M.categories.push({ id: 'new-category-' + (M.categories.length + 1), icon: 'img/category-icons/broasted-chicken-meals.svg', name: { ar: '', en: 'New category' } }); setDirty(true); renderCats();
     } else if (b.dataset.up !== undefined || b.dataset.dn !== undefined) {
       const i = +(b.dataset.up ?? b.dataset.dn), j = b.dataset.up !== undefined ? i - 1 : i + 1;
       if (j >= 0 && j < M.categories.length) { [M.categories[i], M.categories[j]] = [M.categories[j], M.categories[i]]; setDirty(true); renderCats(); }
@@ -144,7 +144,7 @@
   });
   $('#newBtn').addEventListener('click', () => {
     if (dirty && !confirm('Discard current changes and start empty?')) return;
-    load({ currency: 'EGP', categories: [{ id: 'main', icon: '🍗', name: { ar: 'الرئيسية', en: 'Main' } }], modifiers: {}, items: [] }, false);
+    load({ currency: 'EGP', categories: [{ id: 'main', icon: 'img/category-icons/broasted-chicken-meals.svg', name: { ar: 'الرئيسية', en: 'Main' } }], modifiers: {}, items: [] }, false);
   });
 
   function validate() {
