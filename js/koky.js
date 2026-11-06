@@ -4,12 +4,12 @@ const Koky = (() => {
   /* ---------- тексты интерфейса ---------- */
   const DICT = {
     ar: { nav_menu:'القائمة', nav_about:'من نحن', nav_contact:'تواصل معنا', menu_title:'القائمة', menu_sub:'اختار وجبتك وأضفها للسلة.',
-          all:'الكل', add:'أضف', choose:'اختر', required:'مطلوب', optional:'اختياري', add_cart:'أضف للسلة', added:'تمت الإضافة ✓',
+          all:'الكل', add:'أضف', choose:'اختر', required:'مطلوب', optional:'اختياري', add_cart:'أضف للسلة', added:'تمت الإضافة',
           egp:'ج.م', hit:'الأكثر طلباً', empty:'لا توجد أصناف.', err:'تعذر تحميل القائمة. افتح الموقع عبر سيرفر (مش ملف مباشر) وحاول تاني.',
           cart_title:'سلتك', cart_empty:'السلة فاضية', cart_empty_btn:'تصفح القائمة', cart_total:'الإجمالي', cart_checkout:'إتمام الطلب',
           cart_clear:'تفريغ السلة', cart_clear_q:'تفريغ السلة بالكامل؟', remove:'حذف', menu_page_title:'القائمة | Koky Chicken' },
     en: { nav_menu:'Menu', nav_about:'About', nav_contact:'Contact', menu_title:'Menu', menu_sub:'Pick your meal and add it to the cart.',
-          all:'All', add:'Add', choose:'Choose', required:'Required', optional:'Optional', add_cart:'Add to cart', added:'Added ✓',
+          all:'All', add:'Add', choose:'Choose', required:'Required', optional:'Optional', add_cart:'Add to cart', added:'Added',
           egp:'EGP', hit:'Best seller', empty:'No items.', err:'Could not load the menu. Open the site through a server (not a local file) and retry.',
           cart_title:'Your cart', cart_empty:'Your cart is empty', cart_empty_btn:'Browse menu', cart_total:'Total', cart_checkout:'Checkout',
           cart_clear:'Clear cart', cart_clear_q:'Clear the whole cart?', remove:'Remove', menu_page_title:'Menu | Koky Chicken' }
@@ -99,7 +99,7 @@ const Koky = (() => {
     document.body.insertAdjacentHTML('beforeend', `
       <div class="drawer-overlay" id="cartOverlay"></div>
       <aside class="drawer" id="cartDrawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle" aria-hidden="true">
-        <div class="drawer-head"><h3 class="display" id="drawerTitle"></h3><button class="x-btn" id="drawerClose" type="button" aria-label="Close">✕</button></div>
+        <div class="drawer-head"><h3 class="display" id="drawerTitle"></h3><button class="x-btn" id="drawerClose" type="button" aria-label="Close">&times;</button></div>
         <div class="drawer-body" id="drawerBody"></div>
         <div class="drawer-foot" id="drawerFoot">
           <div class="drawer-total"><span id="drawerTotalLabel"></span><strong id="drawerTotal"></strong></div>
@@ -169,7 +169,7 @@ const Koky = (() => {
     if ($('#pmModal')) return;
     document.body.insertAdjacentHTML('beforeend', `
       <div class="modal" id="pmModal" role="dialog" aria-modal="true" aria-labelledby="pmTitle"><div class="sheet">
-        <div class="sheet-head"><div><h3 id="pmTitle"></h3><p id="pmDesc"></p></div><button class="x-btn" id="pmClose" type="button" aria-label="Close">✕</button></div>
+        <div class="sheet-head"><div><h3 id="pmTitle"></h3><p id="pmDesc"></p></div><button class="x-btn" id="pmClose" type="button" aria-label="Close">&times;</button></div>
         <div class="sheet-body" id="pmBody"></div>
         <div class="sheet-foot">
           <div class="stepper"><button type="button" id="pmMinus" aria-label="−">−</button><output id="pmQty">1</output><button type="button" id="pmPlus" aria-label="+">+</button></div>
