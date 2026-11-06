@@ -160,7 +160,7 @@
       "id": "broasted-family-6-pcs",
       "cat": "broasted-chicken-meals",
       "price": 400,
-      "img": null,
+      "img": "img/category-icons/broasted-chicken-meals.svg",
       "name": {
         "ar": "وجبة عائلية ٦ قطع",
         "en": "Family Meal — 6 Pcs"
@@ -287,7 +287,7 @@
       "id": "extra-chicken-strip",
       "cat": "chicken-strips-meals",
       "price": 50,
-      "img": null,
+      "img": "img/category-icons/chicken-strips-meals.svg",
       "name": {
         "ar": "ستريبس إضافي",
         "en": "Extra Chicken Strip"
@@ -301,7 +301,7 @@
       "id": "plain-rice",
       "cat": "chicken-strips-meals",
       "price": 70,
-      "img": null,
+      "img": "img/category-icons/chicken-strips-meals.svg",
       "name": {
         "ar": "أرز سادة",
         "en": "Plain Rice"
@@ -315,7 +315,7 @@
       "id": "rice-2-strips-sauce",
       "cat": "chicken-strips-meals",
       "price": 160,
-      "img": null,
+      "img": "img/category-icons/chicken-strips-meals.svg",
       "name": {
         "ar": "أرز + ٢ ستريبس + صوص",
         "en": "Rice + 2 Chicken Strips + Sauce"
@@ -329,7 +329,7 @@
       "id": "potato-chicken-magic",
       "cat": "chicken-strips-meals",
       "price": 140,
-      "img": null,
+      "img": "img/category-icons/chicken-strips-meals.svg",
       "name": {
         "ar": "بوتاتو تشيكن ماجيك",
         "en": "Potato Chicken Magic"
@@ -673,7 +673,7 @@
       "id": "sweet-chili-sauce",
       "cat": "extras",
       "price": 30,
-      "img": null,
+      "img": "img/category-icons/extras.svg",
       "name": {
         "ar": "صوص سويت تشيلي",
         "en": "Sweet Chili Sauce"
@@ -687,7 +687,7 @@
       "id": "garlic-sauce",
       "cat": "extras",
       "price": 30,
-      "img": null,
+      "img": "img/category-icons/extras.svg",
       "name": {
         "ar": "صوص ثومية",
         "en": "Garlic Sauce"
