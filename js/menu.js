@@ -16,7 +16,6 @@
 
   function lang(l) { Koky.setLang(l); document.title = Koky.t('menu_page_title'); }
 
-  $('#langBtn').addEventListener('click', () => lang(Koky.lang() === 'ar' ? 'en' : 'ar'));
   document.addEventListener('langchange', () => { if (MENU) render(); });
 
   $('#catTabs').addEventListener('click', e => {
