@@ -130,3 +130,7 @@ html[lang="ar"] .brand-wordmark{font-family:'Cairo',sans-serif}
 .empty-cart-icon{width:76px;height:76px}
 .order-success-mark{font-family:'Anton','Cairo',sans-serif;font-size:1.7rem;letter-spacing:.12em;color:var(--gold);background:#1b100b;border:1px solid #f4b51f66;border-radius:50%;width:118px;height:118px;display:grid;place-content:center;line-height:1.05;box-shadow:0 14px 34px #0003}
 .ph svg{width:28px;height:28px;display:block}
+
+/* Restaurant map destination link */
+.map-premium{position:relative}.map-open-link{position:absolute;z-index:3;top:1rem;inset-inline-end:1rem;padding:.7rem 1rem;border-radius:999px;background:#f4b51f;color:#1b100b;font-size:.7rem;font-weight:900;letter-spacing:.06em;box-shadow:0 6px 20px #0005}.map-open-link:hover{background:#fff0c7;transform:translateY(-1px)}
+.hero-photo-frame>img,.menu-hero-image img{object-position:center center}
