@@ -74,7 +74,7 @@ const Koky = (() => {
 
   function cardHTML(it) {
     const hasMods = it.mods && it.mods.length;
-    const img = it.img ? `<img src="${esc(it.img)}" alt="${esc(tr(it.name))}" loading="lazy">` : esc(it.emoji || '🍗');
+    const img = it.img ? `<img src="${esc(it.img)}" alt="${esc(tr(it.name))}" loading="lazy">` : `<svg class="fallback-food-icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#chicken"></use></svg>`;
     return `<article class="card">
       ${it.hit ? `<span class="badge-hit">${t('hit')}</span>` : ''}
       <div class="card-img">${img}</div><!-- ФОТО: поле "img" в menu.json, например "img/dishes/${esc(it.id)}.jpg" -->
@@ -128,7 +128,7 @@ const Koky = (() => {
     $('#drawerClear').textContent = t('cart_clear');
     $('#drawerFoot').hidden = !lines.length;
     if (!lines.length) {
-      $('#drawerBody').innerHTML = `<div class="drawer-empty"><div class="big">🛒</div><p>${t('cart_empty')}</p><a class="btn btn-gold" href="menu.html">${t('cart_empty_btn')}</a></div>`;
+      $('#drawerBody').innerHTML = `<div class="drawer-empty"><div class="big"><svg class="empty-cart-icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#cart"></use></svg></div><p>${t('cart_empty')}</p><a class="btn btn-gold" href="menu.html">${t('cart_empty_btn')}</a></div>`;
       return;
     }
     $('#drawerBody').innerHTML = lines.map(l => `
@@ -139,7 +139,7 @@ const Koky = (() => {
         <div class="line-side">
           <div class="stepper sm"><button type="button" data-act="dec" aria-label="−">−</button><output>${l.qty}</output><button type="button" data-act="inc" aria-label="+">+</button></div>
           <b>${money(l.unit * l.qty)}</b>
-          <button class="rm-btn" type="button" data-act="rm" aria-label="${t('remove')}">🗑</button>
+          <button class="rm-btn" type="button" data-act="rm" aria-label="${t('remove')}"><svg class="trash-icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#trash"></use></svg></button>
         </div>
       </div>`).join('');
     $('#drawerTotal').textContent = money(Cart.total());
