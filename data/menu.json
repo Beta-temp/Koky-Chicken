@@ -1,817 +1,771 @@
 {
- "currency": "EGP",
- "categories": [
-  {
-   "id": "broasted-chicken-meals",
-   "icon": "🍗",
-   "name": {
-    "ar": "وجبات بروستد",
-    "en": "Broasted Chicken Meals"
-   }
-  },
-  {
-   "id": "chicken-strips-meals",
-   "icon": "🍤",
-   "name": {
-    "ar": "وجبات ستريبس",
-    "en": "Chicken Strips Meals"
-   }
-  },
-  {
-   "id": "burgers-sandwiches",
-   "icon": "🍔",
-   "name": {
-    "ar": "برجر وساندوتشات",
-    "en": "Burgers & Sandwiches"
-   }
-  },
-  {
-   "id": "pizza",
-   "icon": "🍕",
-   "name": {
-    "ar": "بيتزا",
-    "en": "Pizza"
-   }
-  },
-  {
-   "id": "pasta",
-   "icon": "🍝",
-   "name": {
-    "ar": "باستا",
-    "en": "Pasta"
-   }
-  },
-  {
-   "id": "extras",
-   "icon": "🍟",
-   "name": {
-    "ar": "إضافات",
-    "en": "Extras"
-   }
-  },
-  {
-   "id": "drinks",
-   "icon": "🥤",
-   "name": {
-    "ar": "مشروبات",
-    "en": "Drinks"
-   }
-  }
- ],
- "modifiers": {
-  "sauce_type": {
-   "type": "single",
-   "name": {
-    "ar": "اختر الصوص",
-    "en": "Choose sauce"
-   },
-   "options": [
+  "currency": "EGP",
+  "categories": [
     {
-     "id": "ranch",
-     "default": true,
-     "name": {
-      "ar": "رانش",
-      "en": "Ranch"
-     },
-     "price": 0
+      "id": "broasted-chicken-meals",
+      "icon": "img/category-icons/broasted-chicken-meals.svg",
+      "name": {
+        "ar": "وجبات بروستد",
+        "en": "Broasted Chicken Meals"
+      }
     },
     {
-     "id": "bbq",
-     "name": {
-      "ar": "باربكيو",
-      "en": "BBQ"
-     },
-     "price": 0
-    }
-   ]
-  },
-  "twister_type": {
-   "type": "single",
-   "name": {
-    "ar": "النوع",
-    "en": "Type"
-   },
-   "options": [
-    {
-     "id": "regular",
-     "default": true,
-     "name": {
-      "ar": "عادي",
-      "en": "Regular"
-     },
-     "price": 0
+      "id": "chicken-strips-meals",
+      "icon": "img/category-icons/chicken-strips-meals.svg",
+      "name": {
+        "ar": "وجبات ستريبس",
+        "en": "Chicken Strips Meals"
+      }
     },
     {
-     "id": "spicy",
-     "name": {
-      "ar": "حار 🌶️",
-      "en": "Spicy 🌶️"
-     },
-     "price": 0
+      "id": "burgers-sandwiches",
+      "icon": "img/category-icons/burgers-sandwiches.svg",
+      "name": {
+        "ar": "برجر وساندوتشات",
+        "en": "Burgers & Sandwiches"
+      }
+    },
+    {
+      "id": "pizza",
+      "icon": "img/category-icons/pizza.svg",
+      "name": {
+        "ar": "بيتزا",
+        "en": "Pizza"
+      }
+    },
+    {
+      "id": "pasta",
+      "icon": "img/category-icons/pasta.svg",
+      "name": {
+        "ar": "باستا",
+        "en": "Pasta"
+      }
+    },
+    {
+      "id": "extras",
+      "icon": "img/category-icons/extras.svg",
+      "name": {
+        "ar": "إضافات",
+        "en": "Extras"
+      }
+    },
+    {
+      "id": "drinks",
+      "icon": "img/category-icons/drinks.svg",
+      "name": {
+        "ar": "مشروبات",
+        "en": "Drinks"
+      }
     }
-   ]
-  }
- },
- "items": [
-  {
-   "id": "broasted-2-pcs",
-   "cat": "broasted-chicken-meals",
-   "price": 200,
-   "img": "img/dishes/broasted-2-pcs.jpg",
-   "emoji": "🍗",
-   "name": {
-    "ar": "٢ قطعة بروستد",
-    "en": "2 Pcs Broasted Chicken"
-   },
-   "desc": {
-    "ar": "٢ قطعة دجاج بروستد مع أرز وعيش وبطاطس.",
-    "en": "2 pieces of broasted chicken served with rice, bread and fries."
-   }
+  ],
+  "modifiers": {
+    "sauce_type": {
+      "type": "single",
+      "name": {
+        "ar": "اختر الصوص",
+        "en": "Choose sauce"
+      },
+      "options": [
+        {
+          "id": "ranch",
+          "default": true,
+          "name": {
+            "ar": "رانش",
+            "en": "Ranch"
+          },
+          "price": 0
+        },
+        {
+          "id": "bbq",
+          "name": {
+            "ar": "باربكيو",
+            "en": "BBQ"
+          },
+          "price": 0
+        }
+      ]
+    },
+    "twister_type": {
+      "type": "single",
+      "name": {
+        "ar": "النوع",
+        "en": "Type"
+      },
+      "options": [
+        {
+          "id": "regular",
+          "default": true,
+          "name": {
+            "ar": "عادي",
+            "en": "Regular"
+          },
+          "price": 0
+        },
+        {
+          "id": "spicy",
+          "name": {
+            "ar": "حار",
+            "en": "Spicy"
+          },
+          "price": 0
+        }
+      ]
+    }
   },
-  {
-   "id": "broasted-3-pcs",
-   "cat": "broasted-chicken-meals",
-   "price": 250,
-   "img": "img/dishes/broasted-3-pcs.jpg",
-   "emoji": "🍗",
-   "name": {
-    "ar": "٣ قطع بروستد",
-    "en": "3 Pcs Broasted Chicken"
-   },
-   "desc": {
-    "ar": "٣ قطع دجاج بروستد مع أرز وعيش وبطاطس.",
-    "en": "3 pieces of broasted chicken served with rice, bread and fries."
-   },
-   "hit": true
-  },
-  {
-   "id": "broasted-4-pcs",
-   "cat": "broasted-chicken-meals",
-   "price": 300,
-   "img": "img/dishes/broasted-4-pcs.jpg",
-   "emoji": "🍗",
-   "name": {
-    "ar": "٤ قطع بروستد",
-    "en": "4 Pcs Broasted Chicken"
-   },
-   "desc": {
-    "ar": "٤ قطع دجاج بروستد مع أرز وعيش وبطاطس.",
-    "en": "4 pieces of broasted chicken served with rice, bread and fries."
-   }
-  },
-  {
-   "id": "broasted-family-6-pcs",
-   "cat": "broasted-chicken-meals",
-   "price": 400,
-   "img": null,
-   "emoji": "🍗",
-   "name": {
-    "ar": "وجبة عائلية ٦ قطع",
-    "en": "Family Meal — 6 Pcs"
-   },
-   "desc": {
-    "ar": "٦ قطع بروستد مع ٢ أرز و٢ عيش و٢ بطاطس وبيبسي ١ لتر.",
-    "en": "6 pieces of broasted chicken with 2 rice, 2 bread, 2 fries and 1L Pepsi."
-   }
-  },
-  {
-   "id": "broasted-family-8-pcs",
-   "cat": "broasted-chicken-meals",
-   "price": 600,
-   "img": "img/dishes/broasted-family-8-pcs.jpg",
-   "emoji": "🍗",
-   "name": {
-    "ar": "وجبة عائلية ٨ قطع",
-    "en": "Family Meal — 8 Pcs"
-   },
-   "desc": {
-    "ar": "٨ قطع بروستد مع ٣ أرز و٣ عيش و٣ بطاطس وبيبسي ١ لتر.",
-    "en": "8 pieces of broasted chicken with 3 rice, 3 bread, 3 fries and 1L Pepsi."
-   },
-   "hit": true
-  },
-  {
-   "id": "broasted-family-12-pcs",
-   "cat": "broasted-chicken-meals",
-   "price": 750,
-   "img": "img/dishes/broasted-family-12-pcs.jpg",
-   "emoji": "🍗",
-   "name": {
-    "ar": "وجبة عائلية ١٢ قطعة",
-    "en": "Family Meal — 12 Pcs"
-   },
-   "desc": {
-    "ar": "١٢ قطعة بروستد مع ٤ أرز و٤ عيش و٤ بطاطس وبيبسي ١ لتر.",
-    "en": "12 pieces of broasted chicken with 4 rice, 4 bread, 4 fries and 1L Pepsi."
-   }
-  },
-  {
-   "id": "crispy-strips-combo",
-   "cat": "broasted-chicken-meals",
-   "price": 650,
-   "img": "img/dishes/crispy-strips-combo.jpg",
-   "emoji": "🍗",
-   "name": {
-    "ar": "كومبو كريسبي وستريبس",
-    "en": "Crispy & Strips Combo"
-   },
-   "desc": {
-    "ar": "٦ قطع كريسبي و٦ ستريبس مع ٣ أرز و٣ عيش و٣ بطاطس وبيبسي ١ لتر.",
-    "en": "6 crispy pieces, 6 chicken strips, 3 rice, 3 bread, 3 fries and 1L Pepsi."
-   }
-  },
-  {
-   "id": "extra-broasted-chicken-piece",
-   "cat": "broasted-chicken-meals",
-   "price": 60,
-   "img": "img/dishes/extra-broasted-chicken-piece.jpg",
-   "emoji": "🍗",
-   "name": {
-    "ar": "قطعة دجاج إضافية",
-    "en": "Extra Chicken Piece"
-   },
-   "desc": {
-    "ar": "قطعة بروستد إضافية.",
-    "en": "One additional piece of broasted chicken."
-   }
-  },
-  {
-   "id": "strips-2-pcs",
-   "cat": "chicken-strips-meals",
-   "price": 150,
-   "img": "img/dishes/strips-2-pcs.jpg",
-   "emoji": "🍤",
-   "name": {
-    "ar": "٢ ستريبس دجاج",
-    "en": "2 Chicken Strips"
-   },
-   "desc": {
-    "ar": "٢ ستريبس دجاج مع أرز وعيش وبطاطس.",
-    "en": "2 chicken strips served with rice, bread and fries."
-   }
-  },
-  {
-   "id": "strips-4-pcs",
-   "cat": "chicken-strips-meals",
-   "price": 200,
-   "img": "img/dishes/strips-4-pcs.jpg",
-   "emoji": "🍤",
-   "name": {
-    "ar": "٤ ستريبس دجاج",
-    "en": "4 Chicken Strips"
-   },
-   "desc": {
-    "ar": "٤ ستريبس دجاج مع أرز وعيش وبطاطس.",
-    "en": "4 chicken strips served with rice, bread and fries."
-   }
-  },
-  {
-   "id": "strips-6-pcs",
-   "cat": "chicken-strips-meals",
-   "price": 300,
-   "img": "img/dishes/strips-6-pcs.jpg",
-   "emoji": "🍤",
-   "name": {
-    "ar": "٦ ستريبس دجاج",
-    "en": "6 Chicken Strips"
-   },
-   "desc": {
-    "ar": "٦ ستريبس دجاج مع أرز وعيش وبطاطس.",
-    "en": "6 chicken strips served with rice, bread and fries."
-   }
-  },
-  {
-   "id": "strips-10-pcs-combo",
-   "cat": "chicken-strips-meals",
-   "price": 450,
-   "img": "img/dishes/strips-10-pcs-combo.jpg",
-   "emoji": "🍤",
-   "name": {
-    "ar": "كومبو ١٠ ستريبس",
-    "en": "10 Chicken Strips Combo"
-   },
-   "desc": {
-    "ar": "١٠ ستريبس مع ٣ أرز و٣ عيش و٣ بطاطس وبيبسي.",
-    "en": "10 chicken strips with 3 rice, 3 bread, 3 fries and Pepsi."
-   }
-  },
-  {
-   "id": "extra-chicken-strip",
-   "cat": "chicken-strips-meals",
-   "price": 50,
-   "img": null,
-   "emoji": "🍤",
-   "name": {
-    "ar": "ستريبس إضافي",
-    "en": "Extra Chicken Strip"
-   },
-   "desc": {
-    "ar": "قطعة ستريبس دجاج إضافية.",
-    "en": "One additional chicken strip."
-   }
-  },
-  {
-   "id": "plain-rice",
-   "cat": "chicken-strips-meals",
-   "price": 70,
-   "img": null,
-   "emoji": "🍤",
-   "name": {
-    "ar": "أرز سادة",
-    "en": "Plain Rice"
-   },
-   "desc": {
-    "ar": "طبق أرز سادة.",
-    "en": "A serving of plain rice."
-   }
-  },
-  {
-   "id": "rice-2-strips-sauce",
-   "cat": "chicken-strips-meals",
-   "price": 160,
-   "img": null,
-   "emoji": "🍤",
-   "name": {
-    "ar": "أرز + ٢ ستريبس + صوص",
-    "en": "Rice + 2 Chicken Strips + Sauce"
-   },
-   "desc": {
-    "ar": "طبق أرز مع ٢ ستريبس وصوص.",
-    "en": "A serving of rice with 2 chicken strips and sauce."
-   }
-  },
-  {
-   "id": "potato-chicken-magic",
-   "cat": "chicken-strips-meals",
-   "price": 140,
-   "img": null,
-   "emoji": "🍤",
-   "name": {
-    "ar": "بوتاتو تشيكن ماجيك",
-    "en": "Potato Chicken Magic"
-   },
-   "desc": {
-    "ar": "بوتاتو تشيكن ماجيك على طريقة كوكي.",
-    "en": "Potato Chicken Magic — prepared KOKY-style."
-   }
-  },
-  {
-   "id": "koky-burger",
-   "cat": "burgers-sandwiches",
-   "price": 170,
-   "img": "img/dishes/koky-burger.jpg",
-   "emoji": "🍔",
-   "name": {
-    "ar": "كوكي برجر",
-    "en": "KOKY Burger"
-   },
-   "desc": {
-    "ar": "برجر كوكي المميز.",
-    "en": "KOKY signature burger."
-   },
-   "hit": true
-  },
-  {
-   "id": "koky-double-burger",
-   "cat": "burgers-sandwiches",
-   "price": 250,
-   "img": "img/dishes/koky-double-burger.jpg",
-   "emoji": "🍔",
-   "name": {
-    "ar": "كوكي دبل برجر",
-    "en": "KOKY Double Burger"
-   },
-   "desc": {
-    "ar": "برجر كوكي بحصة مضاعفة.",
-    "en": "KOKY burger with a double portion."
-   }
-  },
-  {
-   "id": "koky-twister",
-   "cat": "burgers-sandwiches",
-   "price": 150,
-   "img": "img/dishes/koky-twister.jpg",
-   "emoji": "🍔",
-   "name": {
-    "ar": "كوكي تويستر",
-    "en": "KOKY Twister"
-   },
-   "desc": {
-    "ar": "تويستر كوكي، عادي أو حار.",
-    "en": "KOKY Twister available in Regular or Spicy."
-   },
-   "hit": true,
-   "mods": [
-    "twister_type"
-   ]
-  },
-  {
-   "id": "hot-dog-sandwich",
-   "cat": "burgers-sandwiches",
-   "price": 120,
-   "img": "img/dishes/hot-dog-sandwich.jpg",
-   "emoji": "🍔",
-   "name": {
-    "ar": "ساندوتش هوت دوج",
-    "en": "Hot Dog Sandwich"
-   },
-   "desc": {
-    "ar": "ساندوتش هوت دوج.",
-    "en": "Hot dog served in a sandwich."
-   }
-  },
-  {
-   "id": "koky-single-combo",
-   "cat": "burgers-sandwiches",
-   "price": 230,
-   "img": "img/dishes/koky-single-combo.jpg",
-   "emoji": "🍔",
-   "name": {
-    "ar": "كوكي سينجل كومبو",
-    "en": "KOKY Single Combo"
-   },
-   "desc": {
-    "ar": "كومبو برجر كوكي سينجل.",
-    "en": "KOKY single burger combo."
-   }
-  },
-  {
-   "id": "koky-double-combo",
-   "cat": "burgers-sandwiches",
-   "price": 300,
-   "img": "img/dishes/koky-double-combo.jpg",
-   "emoji": "🍔",
-   "name": {
-    "ar": "كوكي دبل كومبو",
-    "en": "KOKY Double Combo"
-   },
-   "desc": {
-    "ar": "كومبو برجر كوكي دبل.",
-    "en": "KOKY double burger combo."
-   }
-  },
-  {
-   "id": "margherita",
-   "cat": "pizza",
-   "price": 180,
-   "img": "img/dishes/margherita.jpg",
-   "emoji": "🍕",
-   "name": {
-    "ar": "مارجريتا",
-    "en": "Margherita"
-   },
-   "desc": {
-    "ar": "بيتزا كلاسيك بصوص الطماطم والجبنة.",
-    "en": "Classic pizza topped with tomato sauce and cheese."
-   }
-  },
-  {
-   "id": "vegetables",
-   "cat": "pizza",
-   "price": 200,
-   "img": "img/dishes/vegetables.jpg",
-   "emoji": "🍕",
-   "name": {
-    "ar": "خضار",
-    "en": "Vegetables"
-   },
-   "desc": {
-    "ar": "بيتزا بتشكيلة خضار وجبنة.",
-    "en": "Pizza topped with a selection of vegetables and cheese."
-   }
-  },
-  {
-   "id": "mixed-cheese",
-   "cat": "pizza",
-   "price": 250,
-   "img": "img/dishes/mixed-cheese.jpg",
-   "emoji": "🍕",
-   "name": {
-    "ar": "ميكس جبن",
-    "en": "Mixed Cheese"
-   },
-   "desc": {
-    "ar": "بيتزا بخليط من الأجبان.",
-    "en": "Pizza topped with a blend of cheeses."
-   }
-  },
-  {
-   "id": "hot-dog",
-   "cat": "pizza",
-   "price": 250,
-   "img": "img/dishes/hot-dog.jpg",
-   "emoji": "🍕",
-   "name": {
-    "ar": "هوت دوج",
-    "en": "Hot Dog"
-   },
-   "desc": {
-    "ar": "بيتزا بسوسيس هوت دوج وجبنة.",
-    "en": "Pizza topped with hot dog sausage and cheese."
-   }
-  },
-  {
-   "id": "bbq-chicken",
-   "cat": "pizza",
-   "price": 250,
-   "img": "img/dishes/bbq-chicken.jpg",
-   "emoji": "🍕",
-   "name": {
-    "ar": "دجاج باربكيو",
-    "en": "BBQ Chicken"
-   },
-   "desc": {
-    "ar": "بيتزا دجاج بنكهة الباربكيو.",
-    "en": "Chicken pizza with BBQ-style flavour."
-   }
-  },
-  {
-   "id": "chicken-ranch",
-   "cat": "pizza",
-   "price": 250,
-   "img": "img/dishes/chicken-ranch.jpg",
-   "emoji": "🍕",
-   "name": {
-    "ar": "دجاج رانش",
-    "en": "Chicken Ranch"
-   },
-   "desc": {
-    "ar": "بيتزا دجاج بنكهة الرانش الكريمي.",
-    "en": "Chicken pizza with a creamy ranch-style flavour."
-   }
-  },
-  {
-   "id": "pepperoni",
-   "cat": "pizza",
-   "price": 250,
-   "img": "img/dishes/pepperoni.jpg",
-   "emoji": "🍕",
-   "name": {
-    "ar": "بيبروني",
-    "en": "Pepperoni"
-   },
-   "desc": {
-    "ar": "بيتزا بيبروني وجبنة.",
-    "en": "Pizza topped with pepperoni and cheese."
-   }
-  },
-  {
-   "id": "pastrami",
-   "cat": "pizza",
-   "price": 250,
-   "img": "img/dishes/pastrami.jpg",
-   "emoji": "🍕",
-   "name": {
-    "ar": "بسطرمة",
-    "en": "Pastrami"
-   },
-   "desc": {
-    "ar": "بيتزا بسطرمة وجبنة.",
-    "en": "Pizza topped with pastrami and cheese."
-   }
-  },
-  {
-   "id": "sausage",
-   "cat": "pizza",
-   "price": 250,
-   "img": "img/dishes/sausage.jpg",
-   "emoji": "🍕",
-   "name": {
-    "ar": "سجق",
-    "en": "Sausage"
-   },
-   "desc": {
-    "ar": "بيتزا سجق وجبنة.",
-    "en": "Pizza topped with sausage and cheese."
-   }
-  },
-  {
-   "id": "chicken-pasta-mozzarella",
-   "cat": "pasta",
-   "price": 200,
-   "img": "img/dishes/chicken-pasta-mozzarella.jpg",
-   "emoji": "🍝",
-   "name": {
-    "ar": "باستا دجاج بالموتزاريلا",
-    "en": "Chicken Pasta with Mozzarella"
-   },
-   "desc": {
-    "ar": "باستا بالدجاج وجبنة الموتزاريلا.",
-    "en": "Pasta with chicken and mozzarella cheese."
-   }
-  },
-  {
-   "id": "sausage-pasta",
-   "cat": "pasta",
-   "price": 200,
-   "img": "img/dishes/sausage-pasta.jpg",
-   "emoji": "🍝",
-   "name": {
-    "ar": "باستا سجق",
-    "en": "Sausage Pasta"
-   },
-   "desc": {
-    "ar": "باستا مع السجق.",
-    "en": "Pasta served with sausage."
-   }
-  },
-  {
-   "id": "coleslaw",
-   "cat": "extras",
-   "price": 35,
-   "img": "img/dishes/coleslaw.jpg",
-   "emoji": "🍟",
-   "name": {
-    "ar": "كول سلو",
-    "en": "Coleslaw"
-   },
-   "desc": {
-    "ar": "سلطة كرنب كريمية كلاسيك.",
-    "en": "Classic creamy cabbage salad."
-   }
-  },
-  {
-   "id": "extra-bacon",
-   "cat": "extras",
-   "price": 40,
-   "img": "img/dishes/extra-bacon.jpg",
-   "emoji": "🍟",
-   "name": {
-    "ar": "بيكون إضافي",
-    "en": "Extra Bacon"
-   },
-   "desc": {
-    "ar": "بيكون إضافي لطلبك.",
-    "en": "Add extra bacon to your order."
-   }
-  },
-  {
-   "id": "extra-turkey",
-   "cat": "extras",
-   "price": 40,
-   "img": "img/dishes/extra-turkey.jpg",
-   "emoji": "🍟",
-   "name": {
-    "ar": "ديك رومي إضافي",
-    "en": "Extra Turkey"
-   },
-   "desc": {
-    "ar": "ديك رومي إضافي لطلبك.",
-    "en": "Add extra turkey to your order."
-   }
-  },
-  {
-   "id": "cheese-sauce",
-   "cat": "extras",
-   "price": 30,
-   "img": "img/dishes/cheese-sauce.jpg",
-   "emoji": "🍟",
-   "name": {
-    "ar": "صوص جبنة",
-    "en": "Cheese Sauce"
-   },
-   "desc": {
-    "ar": "صوص جبنة كريمي للتغميس.",
-    "en": "Creamy cheese dipping sauce."
-   }
-  },
-  {
-   "id": "ranch-or-bbq-sauce",
-   "cat": "extras",
-   "price": 30,
-   "img": "img/dishes/ranch-or-bbq-sauce.jpg",
-   "emoji": "🍟",
-   "name": {
-    "ar": "صوص رانش أو باربكيو",
-    "en": "Ranch or BBQ Sauce"
-   },
-   "desc": {
-    "ar": "اختار صوص رانش أو باربكيو.",
-    "en": "Choose ranch sauce or BBQ sauce."
-   },
-   "mods": [
-    "sauce_type"
-   ]
-  },
-  {
-   "id": "big-tasty-sauce",
-   "cat": "extras",
-   "price": 30,
-   "img": "img/dishes/big-tasty-sauce.jpg",
-   "emoji": "🍟",
-   "name": {
-    "ar": "صوص بيج تيستي",
-    "en": "Big Tasty Sauce"
-   },
-   "desc": {
-    "ar": "صوص بيج تيستي المميز.",
-    "en": "Big Tasty-style signature sauce."
-   }
-  },
-  {
-   "id": "sweet-chili-sauce",
-   "cat": "extras",
-   "price": 30,
-   "img": null,
-   "emoji": "🍟",
-   "name": {
-    "ar": "صوص سويت تشيلي",
-    "en": "Sweet Chili Sauce"
-   },
-   "desc": {
-    "ar": "صوص حلو بحرارة خفيفة.",
-    "en": "Sweet and mildly spicy chili sauce."
-   }
-  },
-  {
-   "id": "garlic-sauce",
-   "cat": "extras",
-   "price": 30,
-   "img": null,
-   "emoji": "🍟",
-   "name": {
-    "ar": "صوص ثومية",
-    "en": "Garlic Sauce"
-   },
-   "desc": {
-    "ar": "صوص ثومية كريمي.",
-    "en": "Creamy garlic sauce."
-   }
-  },
-  {
-   "id": "fries",
-   "cat": "extras",
-   "price": 40,
-   "img": "img/dishes/fries.jpg",
-   "emoji": "🍟",
-   "name": {
-    "ar": "بطاطس",
-    "en": "Fries"
-   },
-   "desc": {
-    "ar": "بطاطس ذهبية مقرمشة.",
-    "en": "Golden crispy fries."
-   }
-  },
-  {
-   "id": "soft-drink",
-   "cat": "drinks",
-   "price": 50,
-   "img": "img/dishes/soft-drink.jpg",
-   "emoji": "🥤",
-   "name": {
-    "ar": "مشروب غازي",
-    "en": "Soft Drink"
-   },
-   "desc": {
-    "ar": "مشروب غازي مثلج.",
-    "en": "Chilled soft drink."
-   }
-  },
-  {
-   "id": "soft-drink-1l",
-   "cat": "drinks",
-   "price": 100,
-   "img": "img/dishes/soft-drink-1l.jpg",
-   "emoji": "🥤",
-   "name": {
-    "ar": "مشروب غازي ١ لتر",
-    "en": "Soft Drink 1L"
-   },
-   "desc": {
-    "ar": "زجاجة مشروب غازي ١ لتر.",
-    "en": "One-litre bottle of soft drink."
-   }
-  },
-  {
-   "id": "small-water",
-   "cat": "drinks",
-   "price": 30,
-   "img": "img/dishes/small-water.jpg",
-   "emoji": "🥤",
-   "name": {
-    "ar": "مياه صغيرة",
-    "en": "Small Water"
-   },
-   "desc": {
-    "ar": "زجاجة مياه شرب صغيرة.",
-    "en": "Bottled drinking water, small size."
-   }
-  },
-  {
-   "id": "big-water",
-   "cat": "drinks",
-   "price": 50,
-   "img": "img/dishes/big-water.jpg",
-   "emoji": "🥤",
-   "name": {
-    "ar": "مياه كبيرة",
-    "en": "Big Water"
-   },
-   "desc": {
-    "ar": "زجاجة مياه شرب كبيرة.",
-    "en": "Bottled drinking water, large size."
-   }
-  }
- ]
+  "items": [
+    {
+      "id": "broasted-2-pcs",
+      "cat": "broasted-chicken-meals",
+      "price": 200,
+      "img": "img/dishes/broasted-2-pcs.jpg",
+      "name": {
+        "ar": "٢ قطعة بروستد",
+        "en": "2 Pcs Broasted Chicken"
+      },
+      "desc": {
+        "ar": "٢ قطعة دجاج بروستد مع أرز وعيش وبطاطس.",
+        "en": "2 pieces of broasted chicken served with rice, bread and fries."
+      }
+    },
+    {
+      "id": "broasted-3-pcs",
+      "cat": "broasted-chicken-meals",
+      "price": 250,
+      "img": "img/dishes/broasted-3-pcs.jpg",
+      "name": {
+        "ar": "٣ قطع بروستد",
+        "en": "3 Pcs Broasted Chicken"
+      },
+      "desc": {
+        "ar": "٣ قطع دجاج بروستد مع أرز وعيش وبطاطس.",
+        "en": "3 pieces of broasted chicken served with rice, bread and fries."
+      },
+      "hit": true
+    },
+    {
+      "id": "broasted-4-pcs",
+      "cat": "broasted-chicken-meals",
+      "price": 300,
+      "img": "img/dishes/broasted-4-pcs.jpg",
+      "name": {
+        "ar": "٤ قطع بروستد",
+        "en": "4 Pcs Broasted Chicken"
+      },
+      "desc": {
+        "ar": "٤ قطع دجاج بروستد مع أرز وعيش وبطاطس.",
+        "en": "4 pieces of broasted chicken served with rice, bread and fries."
+      }
+    },
+    {
+      "id": "broasted-family-6-pcs",
+      "cat": "broasted-chicken-meals",
+      "price": 400,
+      "img": null,
+      "name": {
+        "ar": "وجبة عائلية ٦ قطع",
+        "en": "Family Meal — 6 Pcs"
+      },
+      "desc": {
+        "ar": "٦ قطع بروستد مع ٢ أرز و٢ عيش و٢ بطاطس وبيبسي ١ لتر.",
+        "en": "6 pieces of broasted chicken with 2 rice, 2 bread, 2 fries and 1L Pepsi."
+      }
+    },
+    {
+      "id": "broasted-family-8-pcs",
+      "cat": "broasted-chicken-meals",
+      "price": 600,
+      "img": "img/dishes/broasted-family-8-pcs.jpg",
+      "name": {
+        "ar": "وجبة عائلية ٨ قطع",
+        "en": "Family Meal — 8 Pcs"
+      },
+      "desc": {
+        "ar": "٨ قطع بروستد مع ٣ أرز و٣ عيش و٣ بطاطس وبيبسي ١ لتر.",
+        "en": "8 pieces of broasted chicken with 3 rice, 3 bread, 3 fries and 1L Pepsi."
+      },
+      "hit": true
+    },
+    {
+      "id": "broasted-family-12-pcs",
+      "cat": "broasted-chicken-meals",
+      "price": 750,
+      "img": "img/dishes/broasted-family-12-pcs.jpg",
+      "name": {
+        "ar": "وجبة عائلية ١٢ قطعة",
+        "en": "Family Meal — 12 Pcs"
+      },
+      "desc": {
+        "ar": "١٢ قطعة بروستد مع ٤ أرز و٤ عيش و٤ بطاطس وبيبسي ١ لتر.",
+        "en": "12 pieces of broasted chicken with 4 rice, 4 bread, 4 fries and 1L Pepsi."
+      }
+    },
+    {
+      "id": "crispy-strips-combo",
+      "cat": "broasted-chicken-meals",
+      "price": 650,
+      "img": "img/dishes/crispy-strips-combo.jpg",
+      "name": {
+        "ar": "كومبو كريسبي وستريبس",
+        "en": "Crispy & Strips Combo"
+      },
+      "desc": {
+        "ar": "٦ قطع كريسبي و٦ ستريبس مع ٣ أرز و٣ عيش و٣ بطاطس وبيبسي ١ لتر.",
+        "en": "6 crispy pieces, 6 chicken strips, 3 rice, 3 bread, 3 fries and 1L Pepsi."
+      }
+    },
+    {
+      "id": "extra-broasted-chicken-piece",
+      "cat": "broasted-chicken-meals",
+      "price": 60,
+      "img": "img/dishes/extra-broasted-chicken-piece.jpg",
+      "name": {
+        "ar": "قطعة دجاج إضافية",
+        "en": "Extra Chicken Piece"
+      },
+      "desc": {
+        "ar": "قطعة بروستد إضافية.",
+        "en": "One additional piece of broasted chicken."
+      }
+    },
+    {
+      "id": "strips-2-pcs",
+      "cat": "chicken-strips-meals",
+      "price": 150,
+      "img": "img/dishes/strips-2-pcs.jpg",
+      "name": {
+        "ar": "٢ ستريبس دجاج",
+        "en": "2 Chicken Strips"
+      },
+      "desc": {
+        "ar": "٢ ستريبس دجاج مع أرز وعيش وبطاطس.",
+        "en": "2 chicken strips served with rice, bread and fries."
+      }
+    },
+    {
+      "id": "strips-4-pcs",
+      "cat": "chicken-strips-meals",
+      "price": 200,
+      "img": "img/dishes/strips-4-pcs.jpg",
+      "name": {
+        "ar": "٤ ستريبس دجاج",
+        "en": "4 Chicken Strips"
+      },
+      "desc": {
+        "ar": "٤ ستريبس دجاج مع أرز وعيش وبطاطس.",
+        "en": "4 chicken strips served with rice, bread and fries."
+      }
+    },
+    {
+      "id": "strips-6-pcs",
+      "cat": "chicken-strips-meals",
+      "price": 300,
+      "img": "img/dishes/strips-6-pcs.jpg",
+      "name": {
+        "ar": "٦ ستريبس دجاج",
+        "en": "6 Chicken Strips"
+      },
+      "desc": {
+        "ar": "٦ ستريبس دجاج مع أرز وعيش وبطاطس.",
+        "en": "6 chicken strips served with rice, bread and fries."
+      }
+    },
+    {
+      "id": "strips-10-pcs-combo",
+      "cat": "chicken-strips-meals",
+      "price": 450,
+      "img": "img/dishes/strips-10-pcs-combo.jpg",
+      "name": {
+        "ar": "كومبو ١٠ ستريبس",
+        "en": "10 Chicken Strips Combo"
+      },
+      "desc": {
+        "ar": "١٠ ستريبس مع ٣ أرز و٣ عيش و٣ بطاطس وبيبسي.",
+        "en": "10 chicken strips with 3 rice, 3 bread, 3 fries and Pepsi."
+      }
+    },
+    {
+      "id": "extra-chicken-strip",
+      "cat": "chicken-strips-meals",
+      "price": 50,
+      "img": null,
+      "name": {
+        "ar": "ستريبس إضافي",
+        "en": "Extra Chicken Strip"
+      },
+      "desc": {
+        "ar": "قطعة ستريبس دجاج إضافية.",
+        "en": "One additional chicken strip."
+      }
+    },
+    {
+      "id": "plain-rice",
+      "cat": "chicken-strips-meals",
+      "price": 70,
+      "img": null,
+      "name": {
+        "ar": "أرز سادة",
+        "en": "Plain Rice"
+      },
+      "desc": {
+        "ar": "طبق أرز سادة.",
+        "en": "A serving of plain rice."
+      }
+    },
+    {
+      "id": "rice-2-strips-sauce",
+      "cat": "chicken-strips-meals",
+      "price": 160,
+      "img": null,
+      "name": {
+        "ar": "أرز + ٢ ستريبس + صوص",
+        "en": "Rice + 2 Chicken Strips + Sauce"
+      },
+      "desc": {
+        "ar": "طبق أرز مع ٢ ستريبس وصوص.",
+        "en": "A serving of rice with 2 chicken strips and sauce."
+      }
+    },
+    {
+      "id": "potato-chicken-magic",
+      "cat": "chicken-strips-meals",
+      "price": 140,
+      "img": null,
+      "name": {
+        "ar": "بوتاتو تشيكن ماجيك",
+        "en": "Potato Chicken Magic"
+      },
+      "desc": {
+        "ar": "بوتاتو تشيكن ماجيك على طريقة كوكي.",
+        "en": "Potato Chicken Magic — prepared KOKY-style."
+      }
+    },
+    {
+      "id": "koky-burger",
+      "cat": "burgers-sandwiches",
+      "price": 170,
+      "img": "img/dishes/koky-burger.jpg",
+      "name": {
+        "ar": "كوكي برجر",
+        "en": "KOKY Burger"
+      },
+      "desc": {
+        "ar": "برجر كوكي المميز.",
+        "en": "KOKY signature burger."
+      },
+      "hit": true
+    },
+    {
+      "id": "koky-double-burger",
+      "cat": "burgers-sandwiches",
+      "price": 250,
+      "img": "img/dishes/koky-double-burger.jpg",
+      "name": {
+        "ar": "كوكي دبل برجر",
+        "en": "KOKY Double Burger"
+      },
+      "desc": {
+        "ar": "برجر كوكي بحصة مضاعفة.",
+        "en": "KOKY burger with a double portion."
+      }
+    },
+    {
+      "id": "koky-twister",
+      "cat": "burgers-sandwiches",
+      "price": 150,
+      "img": "img/dishes/koky-twister.jpg",
+      "name": {
+        "ar": "كوكي تويستر",
+        "en": "KOKY Twister"
+      },
+      "desc": {
+        "ar": "تويستر كوكي، عادي أو حار.",
+        "en": "KOKY Twister available in Regular or Spicy."
+      },
+      "hit": true,
+      "mods": [
+        "twister_type"
+      ]
+    },
+    {
+      "id": "hot-dog-sandwich",
+      "cat": "burgers-sandwiches",
+      "price": 120,
+      "img": "img/dishes/hot-dog-sandwich.jpg",
+      "name": {
+        "ar": "ساندوتش هوت دوج",
+        "en": "Hot Dog Sandwich"
+      },
+      "desc": {
+        "ar": "ساندوتش هوت دوج.",
+        "en": "Hot dog served in a sandwich."
+      }
+    },
+    {
+      "id": "koky-single-combo",
+      "cat": "burgers-sandwiches",
+      "price": 230,
+      "img": "img/dishes/koky-single-combo.jpg",
+      "name": {
+        "ar": "كوكي سينجل كومبو",
+        "en": "KOKY Single Combo"
+      },
+      "desc": {
+        "ar": "كومبو برجر كوكي سينجل.",
+        "en": "KOKY single burger combo."
+      }
+    },
+    {
+      "id": "koky-double-combo",
+      "cat": "burgers-sandwiches",
+      "price": 300,
+      "img": "img/dishes/koky-double-combo.jpg",
+      "name": {
+        "ar": "كوكي دبل كومبو",
+        "en": "KOKY Double Combo"
+      },
+      "desc": {
+        "ar": "كومبو برجر كوكي دبل.",
+        "en": "KOKY double burger combo."
+      }
+    },
+    {
+      "id": "margherita",
+      "cat": "pizza",
+      "price": 180,
+      "img": "img/dishes/margherita.jpg",
+      "name": {
+        "ar": "مارجريتا",
+        "en": "Margherita"
+      },
+      "desc": {
+        "ar": "بيتزا كلاسيك بصوص الطماطم والجبنة.",
+        "en": "Classic pizza topped with tomato sauce and cheese."
+      }
+    },
+    {
+      "id": "vegetables",
+      "cat": "pizza",
+      "price": 200,
+      "img": "img/dishes/vegetables.jpg",
+      "name": {
+        "ar": "خضار",
+        "en": "Vegetables"
+      },
+      "desc": {
+        "ar": "بيتزا بتشكيلة خضار وجبنة.",
+        "en": "Pizza topped with a selection of vegetables and cheese."
+      }
+    },
+    {
+      "id": "mixed-cheese",
+      "cat": "pizza",
+      "price": 250,
+      "img": "img/dishes/mixed-cheese.jpg",
+      "name": {
+        "ar": "ميكس جبن",
+        "en": "Mixed Cheese"
+      },
+      "desc": {
+        "ar": "بيتزا بخليط من الأجبان.",
+        "en": "Pizza topped with a blend of cheeses."
+      }
+    },
+    {
+      "id": "hot-dog",
+      "cat": "pizza",
+      "price": 250,
+      "img": "img/dishes/hot-dog.jpg",
+      "name": {
+        "ar": "هوت دوج",
+        "en": "Hot Dog"
+      },
+      "desc": {
+        "ar": "بيتزا بسوسيس هوت دوج وجبنة.",
+        "en": "Pizza topped with hot dog sausage and cheese."
+      }
+    },
+    {
+      "id": "bbq-chicken",
+      "cat": "pizza",
+      "price": 250,
+      "img": "img/dishes/bbq-chicken.jpg",
+      "name": {
+        "ar": "دجاج باربكيو",
+        "en": "BBQ Chicken"
+      },
+      "desc": {
+        "ar": "بيتزا دجاج بنكهة الباربكيو.",
+        "en": "Chicken pizza with BBQ-style flavour."
+      }
+    },
+    {
+      "id": "chicken-ranch",
+      "cat": "pizza",
+      "price": 250,
+      "img": "img/dishes/chicken-ranch.jpg",
+      "name": {
+        "ar": "دجاج رانش",
+        "en": "Chicken Ranch"
+      },
+      "desc": {
+        "ar": "بيتزا دجاج بنكهة الرانش الكريمي.",
+        "en": "Chicken pizza with a creamy ranch-style flavour."
+      }
+    },
+    {
+      "id": "pepperoni",
+      "cat": "pizza",
+      "price": 250,
+      "img": "img/dishes/pepperoni.jpg",
+      "name": {
+        "ar": "بيبروني",
+        "en": "Pepperoni"
+      },
+      "desc": {
+        "ar": "بيتزا بيبروني وجبنة.",
+        "en": "Pizza topped with pepperoni and cheese."
+      }
+    },
+    {
+      "id": "pastrami",
+      "cat": "pizza",
+      "price": 250,
+      "img": "img/dishes/pastrami.jpg",
+      "name": {
+        "ar": "بسطرمة",
+        "en": "Pastrami"
+      },
+      "desc": {
+        "ar": "بيتزا بسطرمة وجبنة.",
+        "en": "Pizza topped with pastrami and cheese."
+      }
+    },
+    {
+      "id": "sausage",
+      "cat": "pizza",
+      "price": 250,
+      "img": "img/dishes/sausage.jpg",
+      "name": {
+        "ar": "سجق",
+        "en": "Sausage"
+      },
+      "desc": {
+        "ar": "بيتزا سجق وجبنة.",
+        "en": "Pizza topped with sausage and cheese."
+      }
+    },
+    {
+      "id": "chicken-pasta-mozzarella",
+      "cat": "pasta",
+      "price": 200,
+      "img": "img/dishes/chicken-pasta-mozzarella.jpg",
+      "name": {
+        "ar": "باستا دجاج بالموتزاريلا",
+        "en": "Chicken Pasta with Mozzarella"
+      },
+      "desc": {
+        "ar": "باستا بالدجاج وجبنة الموتزاريلا.",
+        "en": "Pasta with chicken and mozzarella cheese."
+      }
+    },
+    {
+      "id": "sausage-pasta",
+      "cat": "pasta",
+      "price": 200,
+      "img": "img/dishes/sausage-pasta.jpg",
+      "name": {
+        "ar": "باستا سجق",
+        "en": "Sausage Pasta"
+      },
+      "desc": {
+        "ar": "باستا مع السجق.",
+        "en": "Pasta served with sausage."
+      }
+    },
+    {
+      "id": "coleslaw",
+      "cat": "extras",
+      "price": 35,
+      "img": "img/dishes/coleslaw.jpg",
+      "name": {
+        "ar": "كول سلو",
+        "en": "Coleslaw"
+      },
+      "desc": {
+        "ar": "سلطة كرنب كريمية كلاسيك.",
+        "en": "Classic creamy cabbage salad."
+      }
+    },
+    {
+      "id": "extra-bacon",
+      "cat": "extras",
+      "price": 40,
+      "img": "img/dishes/extra-bacon.jpg",
+      "name": {
+        "ar": "بيكون إضافي",
+        "en": "Extra Bacon"
+      },
+      "desc": {
+        "ar": "بيكون إضافي لطلبك.",
+        "en": "Add extra bacon to your order."
+      }
+    },
+    {
+      "id": "extra-turkey",
+      "cat": "extras",
+      "price": 40,
+      "img": "img/dishes/extra-turkey.jpg",
+      "name": {
+        "ar": "ديك رومي إضافي",
+        "en": "Extra Turkey"
+      },
+      "desc": {
+        "ar": "ديك رومي إضافي لطلبك.",
+        "en": "Add extra turkey to your order."
+      }
+    },
+    {
+      "id": "cheese-sauce",
+      "cat": "extras",
+      "price": 30,
+      "img": "img/dishes/cheese-sauce.jpg",
+      "name": {
+        "ar": "صوص جبنة",
+        "en": "Cheese Sauce"
+      },
+      "desc": {
+        "ar": "صوص جبنة كريمي للتغميس.",
+        "en": "Creamy cheese dipping sauce."
+      }
+    },
+    {
+      "id": "ranch-or-bbq-sauce",
+      "cat": "extras",
+      "price": 30,
+      "img": "img/dishes/ranch-or-bbq-sauce.jpg",
+      "name": {
+        "ar": "صوص رانش أو باربكيو",
+        "en": "Ranch or BBQ Sauce"
+      },
+      "desc": {
+        "ar": "اختار صوص رانش أو باربكيو.",
+        "en": "Choose ranch sauce or BBQ sauce."
+      },
+      "mods": [
+        "sauce_type"
+      ]
+    },
+    {
+      "id": "big-tasty-sauce",
+      "cat": "extras",
+      "price": 30,
+      "img": "img/dishes/big-tasty-sauce.jpg",
+      "name": {
+        "ar": "صوص بيج تيستي",
+        "en": "Big Tasty Sauce"
+      },
+      "desc": {
+        "ar": "صوص بيج تيستي المميز.",
+        "en": "Big Tasty-style signature sauce."
+      }
+    },
+    {
+      "id": "sweet-chili-sauce",
+      "cat": "extras",
+      "price": 30,
+      "img": null,
+      "name": {
+        "ar": "صوص سويت تشيلي",
+        "en": "Sweet Chili Sauce"
+      },
+      "desc": {
+        "ar": "صوص حلو بحرارة خفيفة.",
+        "en": "Sweet and mildly spicy chili sauce."
+      }
+    },
+    {
+      "id": "garlic-sauce",
+      "cat": "extras",
+      "price": 30,
+      "img": null,
+      "name": {
+        "ar": "صوص ثومية",
+        "en": "Garlic Sauce"
+      },
+      "desc": {
+        "ar": "صوص ثومية كريمي.",
+        "en": "Creamy garlic sauce."
+      }
+    },
+    {
+      "id": "fries",
+      "cat": "extras",
+      "price": 40,
+      "img": "img/dishes/fries.jpg",
+      "name": {
+        "ar": "بطاطس",
+        "en": "Fries"
+      },
+      "desc": {
+        "ar": "بطاطس ذهبية مقرمشة.",
+        "en": "Golden crispy fries."
+      }
+    },
+    {
+      "id": "soft-drink",
+      "cat": "drinks",
+      "price": 50,
+      "img": "img/dishes/soft-drink.jpg",
+      "name": {
+        "ar": "مشروب غازي",
+        "en": "Soft Drink"
+      },
+      "desc": {
+        "ar": "مشروب غازي مثلج.",
+        "en": "Chilled soft drink."
+      }
+    },
+    {
+      "id": "soft-drink-1l",
+      "cat": "drinks",
+      "price": 100,
+      "img": "img/dishes/soft-drink-1l.jpg",
+      "name": {
+        "ar": "مشروب غازي ١ لتر",
+        "en": "Soft Drink 1L"
+      },
+      "desc": {
+        "ar": "زجاجة مشروب غازي ١ لتر.",
+        "en": "One-litre bottle of soft drink."
+      }
+    },
+    {
+      "id": "small-water",
+      "cat": "drinks",
+      "price": 30,
+      "img": "img/dishes/small-water.jpg",
+      "name": {
+        "ar": "مياه صغيرة",
+        "en": "Small Water"
+      },
+      "desc": {
+        "ar": "زجاجة مياه شرب صغيرة.",
+        "en": "Bottled drinking water, small size."
+      }
+    },
+    {
+      "id": "big-water",
+      "cat": "drinks",
+      "price": 50,
+      "img": "img/dishes/big-water.jpg",
+      "name": {
+        "ar": "مياه كبيرة",
+        "en": "Big Water"
+      },
+      "desc": {
+        "ar": "زجاجة مياه شرب كبيرة.",
+        "en": "Bottled drinking water, large size."
+      }
+    }
+  ]
 }
