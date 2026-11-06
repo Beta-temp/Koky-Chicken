@@ -18,7 +18,7 @@
   }
   function setDirty(v) {
     dirty = v;
-    const s = $('#status'); s.textContent = v ? '● unsaved changes (download to keep)' : '✓ loaded'; s.classList.toggle('dirty', v);
+    const s = $('#status'); s.textContent = v ? 'UNSAVED CHANGES (download to keep)' : 'LOADED'; s.classList.toggle('dirty', v);
     if (v) try { localStorage.setItem(DRAFT, JSON.stringify(M)); } catch (e) {}
   }
   const slug = s => String(s).toLowerCase().trim().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
@@ -70,7 +70,7 @@
         <label class="f">Icon<input type="text" data-c="${i}" data-f="icon" value="${esc(c.icon || '')}"></label>
         <label class="f">Name (EN)<input type="text" data-c="${i}" data-f="name.en" value="${esc(c.name.en)}"></label>
         <label class="f">الاسم (AR)<input type="text" class="ar" data-c="${i}" data-f="name.ar" value="${esc(c.name.ar)}"></label>
-        <div class="chk"><button class="btn btn-ghost sm" data-up="${i}" type="button">↑</button><button class="btn btn-ghost sm" data-dn="${i}" type="button">↓</button><button class="btn btn-red sm" data-delcat="${i}" type="button">✕</button></div>
+        <div class="chk"><button class="btn btn-ghost sm" data-up="${i}" type="button">Move up</button><button class="btn btn-ghost sm" data-dn="${i}" type="button">Move down</button><button class="btn btn-red sm" data-delcat="${i}" type="button">Remove</button></div>
       </div>`).join('') + `<p class="note">Order here = order of tabs on the menu page. A category can be deleted only when it has no items.</p>`;
   }
   const render = () => { if (!M) return; tab === 'items' ? renderItems() : renderCats(); };
@@ -132,7 +132,7 @@
   }));
 
   /* ---------- загрузка / скачивание ---------- */
-  function load(m, markDirty) { M = normalize(m); q = ''; setDirty(!!markDirty); if (!markDirty) $('#status').textContent = '✓ loaded'; render(); }
+  function load(m, markDirty) { M = normalize(m); q = ''; setDirty(!!markDirty); if (!markDirty) $('#status').textContent = 'LOADED'; render(); }
 
   $('#fileIn').addEventListener('change', e => {
     const f = e.target.files[0]; if (!f) return;
@@ -164,7 +164,7 @@
 
   $('#dlBtn').addEventListener('click', () => {
     const errs = validate(), box = $('#errs');
-    box.hidden = !errs.length; box.innerHTML = errs.map(e => '⚠ ' + esc(e)).join('<br>');
+    box.hidden = !errs.length; box.innerHTML = errs.map(e => 'Warning: ' + esc(e)).join('<br>');
     if (errs.some(e => !e.startsWith('More than 4'))) { window.scrollTo({ top: 0, behavior: 'smooth' }); return; }   // «hit > 4» — только предупреждение
     const clean = JSON.parse(JSON.stringify(M));
     clean.items.forEach(it => {
@@ -174,7 +174,7 @@
     const url = URL.createObjectURL(new Blob([JSON.stringify(clean, null, 1)], { type: 'application/json' }));
     const a = Object.assign(document.createElement('a'), { href: url, download: 'menu.json' }); document.body.appendChild(a); a.click(); a.remove();
     setTimeout(() => URL.revokeObjectURL(url), 2000);
-    $('#status').textContent = '✓ downloaded — now upload it to GitHub'; $('#status').classList.remove('dirty'); dirty = false;
+    $('#status').textContent = 'Downloaded — now upload it to GitHub'; $('#status').classList.remove('dirty'); dirty = false;
   });
 
   window.addEventListener('beforeunload', e => { if (dirty) { e.preventDefault(); e.returnValue = ''; } });
