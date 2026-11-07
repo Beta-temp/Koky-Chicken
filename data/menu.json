@@ -117,7 +117,7 @@
       "id": "broasted-2-pcs",
       "cat": "broasted-chicken-meals",
       "price": 200,
-      "img": "https://img0.didiglobal.com/static/soda_public/do1_TjS4KgjXCIX9GLV4lEJG",
+      "img": "img/dishes/broasted-2-pcs.jpg",
       "name": {
         "ar": "٢ قطعة بروستد",
         "en": "2 Pcs Broasted Chicken"
@@ -131,7 +131,7 @@
       "id": "broasted-3-pcs",
       "cat": "broasted-chicken-meals",
       "price": 250,
-      "img": "https://img0.didiglobal.com/static/soda_public/do1_TjS4KgjXCIX9GLV4lEJG",
+      "img": "img/dishes/broasted-3-pcs.jpg",
       "name": {
         "ar": "٣ قطع بروستد",
         "en": "3 Pcs Broasted Chicken"
@@ -146,7 +146,7 @@
       "id": "broasted-4-pcs",
       "cat": "broasted-chicken-meals",
       "price": 300,
-      "img": "https://img0.didiglobal.com/static/soda_public/do1_TjS4KgjXCIX9GLV4lEJG",
+      "img": "img/dishes/broasted-4-pcs.jpg",
       "name": {
         "ar": "٤ قطع بروستد",
         "en": "4 Pcs Broasted Chicken"
@@ -160,7 +160,7 @@
       "id": "broasted-family-6-pcs",
       "cat": "broasted-chicken-meals",
       "price": 400,
-      "img": "https://img0.didiglobal.com/static/soda_public/do1_TjS4KgjXCIX9GLV4lEJG",
+      "img": "img/dishes/broasted-family-8-pcs.jpg",
       "name": {
         "ar": "وجبة عائلية ٦ قطع",
         "en": "Family Meal — 6 Pcs"
@@ -174,7 +174,7 @@
       "id": "broasted-family-8-pcs",
       "cat": "broasted-chicken-meals",
       "price": 600,
-      "img": "https://img0.didiglobal.com/static/soda_public/do1_TjS4KgjXCIX9GLV4lEJG",
+      "img": "img/dishes/broasted-family-8-pcs.jpg",
       "name": {
         "ar": "وجبة عائلية ٨ قطع",
         "en": "Family Meal — 8 Pcs"
@@ -189,7 +189,7 @@
       "id": "broasted-family-12-pcs",
       "cat": "broasted-chicken-meals",
       "price": 750,
-      "img": "https://img0.didiglobal.com/static/soda_public/do1_TjS4KgjXCIX9GLV4lEJG",
+      "img": "img/dishes/broasted-family-12-pcs.jpg",
       "name": {
         "ar": "وجبة عائلية ١٢ قطعة",
         "en": "Family Meal — 12 Pcs"
@@ -203,7 +203,7 @@
       "id": "crispy-strips-combo",
       "cat": "broasted-chicken-meals",
       "price": 650,
-      "img": "https://img0.didiglobal.com/static/soda_public/do1_TjS4KgjXCIX9GLV4lEJG",
+      "img": "img/dishes/crispy-strips-combo.jpg",
       "name": {
         "ar": "كومبو كريسبي وستريبس",
         "en": "Crispy & Strips Combo"
@@ -217,7 +217,7 @@
       "id": "extra-broasted-chicken-piece",
       "cat": "broasted-chicken-meals",
       "price": 60,
-      "img": "https://img0.didiglobal.com/static/soda_public/do1_TjS4KgjXCIX9GLV4lEJG",
+      "img": "img/dishes/extra-broasted-chicken-piece.jpg",
       "name": {
         "ar": "قطعة دجاج إضافية",
         "en": "Extra Chicken Piece"
@@ -231,7 +231,7 @@
       "id": "strips-2-pcs",
       "cat": "chicken-strips-meals",
       "price": 150,
-      "img": "https://d1w7312wesee68.cloudfront.net/vYsqFWqeSzKTwo15VGIvh04dH2Y80MFv4YJiNOmo-Qc/resize%3Afit%3A720%3A720/plain/s3%3A/toasttab/restaurants/restaurant-121277000000000000/menu/items/6/item-300000021904371056_1678824777.jpg",
+      "img": "img/dishes/strips-2-pcs.jpg",
       "name": {
         "ar": "٢ ستريبس دجاج",
         "en": "2 Chicken Strips"
@@ -245,7 +245,7 @@
       "id": "strips-4-pcs",
       "cat": "chicken-strips-meals",
       "price": 200,
-      "img": "https://d1w7312wesee68.cloudfront.net/vYsqFWqeSzKTwo15VGIvh04dH2Y80MFv4YJiNOmo-Qc/resize%3Afit%3A720%3A720/plain/s3%3A/toasttab/restaurants/restaurant-121277000000000000/menu/items/6/item-300000021904371056_1678824777.jpg",
+      "img": "img/dishes/strips-4-pcs.jpg",
       "name": {
         "ar": "٤ ستريبس دجاج",
         "en": "4 Chicken Strips"
@@ -259,7 +259,7 @@
       "id": "strips-6-pcs",
       "cat": "chicken-strips-meals",
       "price": 300,
-      "img": "https://d1w7312wesee68.cloudfront.net/vYsqFWqeSzKTwo15VGIvh04dH2Y80MFv4YJiNOmo-Qc/resize%3Afit%3A720%3A720/plain/s3%3A/toasttab/restaurants/restaurant-121277000000000000/menu/items/6/item-300000021904371056_1678824777.jpg",
+      "img": "img/dishes/strips-6-pcs.jpg",
       "name": {
         "ar": "٦ ستريبس دجاج",
         "en": "6 Chicken Strips"
@@ -273,7 +273,7 @@
       "id": "strips-10-pcs-combo",
       "cat": "chicken-strips-meals",
       "price": 450,
-      "img": "https://d1w7312wesee68.cloudfront.net/vYsqFWqeSzKTwo15VGIvh04dH2Y80MFv4YJiNOmo-Qc/resize%3Afit%3A720%3A720/plain/s3%3A/toasttab/restaurants/restaurant-121277000000000000/menu/items/6/item-300000021904371056_1678824777.jpg",
+      "img": "img/dishes/strips-10-pcs-combo.jpg",
       "name": {
         "ar": "كومبو ١٠ ستريبس",
         "en": "10 Chicken Strips Combo"
@@ -287,7 +287,7 @@
       "id": "extra-chicken-strip",
       "cat": "chicken-strips-meals",
       "price": 50,
-      "img": "https://d1w7312wesee68.cloudfront.net/vYsqFWqeSzKTwo15VGIvh04dH2Y80MFv4YJiNOmo-Qc/resize%3Afit%3A720%3A720/plain/s3%3A/toasttab/restaurants/restaurant-121277000000000000/menu/items/6/item-300000021904371056_1678824777.jpg",
+      "img": "img/dishes/strips-2-pcs.jpg",
       "name": {
         "ar": "ستريبس إضافي",
         "en": "Extra Chicken Strip"
@@ -301,7 +301,7 @@
       "id": "plain-rice",
       "cat": "chicken-strips-meals",
       "price": 70,
-      "img": "https://d1w7312wesee68.cloudfront.net/vYsqFWqeSzKTwo15VGIvh04dH2Y80MFv4YJiNOmo-Qc/resize%3Afit%3A720%3A720/plain/s3%3A/toasttab/restaurants/restaurant-121277000000000000/menu/items/6/item-300000021904371056_1678824777.jpg",
+      "img": "img/dishes/broasted-2-pcs.jpg",
       "name": {
         "ar": "أرز سادة",
         "en": "Plain Rice"
@@ -315,7 +315,7 @@
       "id": "rice-2-strips-sauce",
       "cat": "chicken-strips-meals",
       "price": 160,
-      "img": "https://d1w7312wesee68.cloudfront.net/vYsqFWqeSzKTwo15VGIvh04dH2Y80MFv4YJiNOmo-Qc/resize%3Afit%3A720%3A720/plain/s3%3A/toasttab/restaurants/restaurant-121277000000000000/menu/items/6/item-300000021904371056_1678824777.jpg",
+      "img": "img/dishes/strips-2-pcs.jpg",
       "name": {
         "ar": "أرز + ٢ ستريبس + صوص",
         "en": "Rice + 2 Chicken Strips + Sauce"
@@ -329,7 +329,7 @@
       "id": "potato-chicken-magic",
       "cat": "chicken-strips-meals",
       "price": 140,
-      "img": "https://d1w7312wesee68.cloudfront.net/vYsqFWqeSzKTwo15VGIvh04dH2Y80MFv4YJiNOmo-Qc/resize%3Afit%3A720%3A720/plain/s3%3A/toasttab/restaurants/restaurant-121277000000000000/menu/items/6/item-300000021904371056_1678824777.jpg",
+      "img": "img/dishes/crispy-strips-combo.jpg",
       "name": {
         "ar": "بوتاتو تشيكن ماجيك",
         "en": "Potato Chicken Magic"
@@ -343,7 +343,7 @@
       "id": "koky-burger",
       "cat": "burgers-sandwiches",
       "price": 170,
-      "img": "https://glovo.dhmedia.io/image/global-menu-service/GV_ES/vendor/443646/product/26082869389/ea4c5104-d3bc-4df4-a8b5-d4d19ee7e403.jpg",
+      "img": "img/dishes/koky-burger.jpg",
       "name": {
         "ar": "كوكي برجر",
         "en": "KOKY Burger"
@@ -358,7 +358,7 @@
       "id": "koky-double-burger",
       "cat": "burgers-sandwiches",
       "price": 250,
-      "img": "https://glovo.dhmedia.io/image/global-menu-service/GV_ES/vendor/443646/product/26082869389/ea4c5104-d3bc-4df4-a8b5-d4d19ee7e403.jpg",
+      "img": "img/dishes/koky-double-burger.jpg",
       "name": {
         "ar": "كوكي دبل برجر",
         "en": "KOKY Double Burger"
@@ -372,7 +372,7 @@
       "id": "koky-twister",
       "cat": "burgers-sandwiches",
       "price": 150,
-      "img": "https://glovo.dhmedia.io/image/global-menu-service/GV_ES/vendor/443646/product/26082869389/ea4c5104-d3bc-4df4-a8b5-d4d19ee7e403.jpg",
+      "img": "img/dishes/koky-twister.jpg",
       "name": {
         "ar": "كوكي تويستر",
         "en": "KOKY Twister"
@@ -390,7 +390,7 @@
       "id": "hot-dog-sandwich",
       "cat": "burgers-sandwiches",
       "price": 120,
-      "img": "https://glovo.dhmedia.io/image/global-menu-service/GV_ES/vendor/443646/product/26082869389/ea4c5104-d3bc-4df4-a8b5-d4d19ee7e403.jpg",
+      "img": "img/dishes/hot-dog-sandwich.jpg",
       "name": {
         "ar": "ساندوتش هوت دوج",
         "en": "Hot Dog Sandwich"
@@ -404,7 +404,7 @@
       "id": "koky-single-combo",
       "cat": "burgers-sandwiches",
       "price": 230,
-      "img": "https://glovo.dhmedia.io/image/global-menu-service/GV_ES/vendor/443646/product/26082869389/ea4c5104-d3bc-4df4-a8b5-d4d19ee7e403.jpg",
+      "img": "img/dishes/koky-single-combo.jpg",
       "name": {
         "ar": "كوكي سينجل كومبو",
         "en": "KOKY Single Combo"
@@ -418,7 +418,7 @@
       "id": "koky-double-combo",
       "cat": "burgers-sandwiches",
       "price": 300,
-      "img": "https://glovo.dhmedia.io/image/global-menu-service/GV_ES/vendor/443646/product/26082869389/ea4c5104-d3bc-4df4-a8b5-d4d19ee7e403.jpg",
+      "img": "img/dishes/koky-double-combo.jpg",
       "name": {
         "ar": "كوكي دبل كومبو",
         "en": "KOKY Double Combo"
@@ -558,7 +558,7 @@
       "id": "chicken-pasta-mozzarella",
       "cat": "pasta",
       "price": 200,
-      "img": "https://scrolldiction.com/api/app/content/6951ad7fba04bec5cf7b688b",
+      "img": "img/dishes/chicken-pasta-mozzarella.jpg",
       "name": {
         "ar": "باستا دجاج بالموتزاريلا",
         "en": "Chicken Pasta with Mozzarella"
@@ -572,7 +572,7 @@
       "id": "sausage-pasta",
       "cat": "pasta",
       "price": 200,
-      "img": "https://scrolldiction.com/api/app/content/6951ad7fba04bec5cf7b688b",
+      "img": "img/dishes/sausage-pasta.jpg",
       "name": {
         "ar": "باستا سجق",
         "en": "Sausage Pasta"
@@ -586,7 +586,7 @@
       "id": "coleslaw",
       "cat": "extras",
       "price": 35,
-      "img": "https://imageproxy.wolt.com/assets/69ce2f4040343cbb32c84346",
+      "img": "img/dishes/coleslaw.jpg",
       "name": {
         "ar": "كول سلو",
         "en": "Coleslaw"
@@ -600,7 +600,7 @@
       "id": "extra-bacon",
       "cat": "extras",
       "price": 40,
-      "img": "https://imageproxy.wolt.com/assets/69ce2f4040343cbb32c84346",
+      "img": "img/dishes/extra-bacon.jpg",
       "name": {
         "ar": "بيكون إضافي",
         "en": "Extra Bacon"
@@ -614,7 +614,7 @@
       "id": "extra-turkey",
       "cat": "extras",
       "price": 40,
-      "img": "https://imageproxy.wolt.com/assets/69ce2f4040343cbb32c84346",
+      "img": "img/dishes/extra-turkey.jpg",
       "name": {
         "ar": "ديك رومي إضافي",
         "en": "Extra Turkey"
@@ -628,7 +628,7 @@
       "id": "cheese-sauce",
       "cat": "extras",
       "price": 30,
-      "img": "https://imageproxy.wolt.com/assets/69ce2f4040343cbb32c84346",
+      "img": "img/dishes/cheese-sauce.jpg",
       "name": {
         "ar": "صوص جبنة",
         "en": "Cheese Sauce"
@@ -642,7 +642,7 @@
       "id": "ranch-or-bbq-sauce",
       "cat": "extras",
       "price": 30,
-      "img": "https://imageproxy.wolt.com/assets/69ce2f4040343cbb32c84346",
+      "img": "img/dishes/ranch-or-bbq-sauce.jpg",
       "name": {
         "ar": "صوص رانش أو باربكيو",
         "en": "Ranch or BBQ Sauce"
@@ -659,7 +659,7 @@
       "id": "big-tasty-sauce",
       "cat": "extras",
       "price": 30,
-      "img": "https://imageproxy.wolt.com/assets/69ce2f4040343cbb32c84346",
+      "img": "img/dishes/big-tasty-sauce.jpg",
       "name": {
         "ar": "صوص بيج تيستي",
         "en": "Big Tasty Sauce"
@@ -673,7 +673,7 @@
       "id": "sweet-chili-sauce",
       "cat": "extras",
       "price": 30,
-      "img": "https://imageproxy.wolt.com/assets/69ce2f4040343cbb32c84346",
+      "img": "img/dishes/big-tasty-sauce.jpg",
       "name": {
         "ar": "صوص سويت تشيلي",
         "en": "Sweet Chili Sauce"
@@ -687,7 +687,7 @@
       "id": "garlic-sauce",
       "cat": "extras",
       "price": 30,
-      "img": "https://imageproxy.wolt.com/assets/69ce2f4040343cbb32c84346",
+      "img": "img/dishes/cheese-sauce.jpg",
       "name": {
         "ar": "صوص ثومية",
         "en": "Garlic Sauce"
@@ -701,7 +701,7 @@
       "id": "fries",
       "cat": "extras",
       "price": 40,
-      "img": "https://imageproxy.wolt.com/assets/69ce2f4040343cbb32c84346",
+      "img": "img/dishes/fries.jpg",
       "name": {
         "ar": "بطاطس",
         "en": "Fries"
