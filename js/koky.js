@@ -76,7 +76,7 @@ const Koky = (() => {
     const hasMods = it.mods && it.mods.length;
     const foodIcon = ({'broasted-chicken-meals':'chicken','chicken-strips-meals':'strips','burgers-sandwiches':'burger','pizza':'pizza','pasta':'pasta','extras':'extras','drinks':'drinks'})[it.cat] || 'chicken';
     const fallback = `<div class="food-photo-pending" role="img" aria-label="${esc(tr(it.name))}"><svg class="fallback-food-icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#${foodIcon}"></use></svg><span>PHOTO COMING SOON</span></div>`;
-    const img = it.img ? `<img src="${esc(it.img)}" alt="${esc(tr(it.name))}" loading="lazy" decoding="async" onerror="this.remove();this.parentElement.insertAdjacentHTML('beforeend', '${fallback.replace(/'/g, "\\'")}')">` : fallback;
+    const img = it.img ? `<img src="${esc(it.img)}" alt="${esc(tr(it.name))}" loading="lazy" decoding="async" onerror="this.classList.add('failed')">${fallback}` : fallback;
     return `<article class="card">
       ${it.hit ? `<span class="badge-hit">${t('hit')}</span>` : ''}
       <div class="card-img">${img}</div><!-- ФОТО: поле "img" в menu.json, например "img/dishes/${esc(it.id)}.jpg" -->
