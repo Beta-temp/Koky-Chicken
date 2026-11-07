@@ -294,7 +294,8 @@
       "desc": {
         "ar": "قطعة ستريبس دجاج إضافية.",
         "en": "One additional chicken strip."
-      }
+      },
+      "img": "img/dishes/extra-chicken-strip.jpg"
     },
     {
       "id": "plain-rice",
@@ -307,7 +308,8 @@
       "desc": {
         "ar": "طبق أرز سادة.",
         "en": "A serving of plain rice."
-      }
+      },
+      "img": "img/dishes/plain-rice.jpg"
     },
     {
       "id": "rice-2-strips-sauce",
@@ -320,7 +322,8 @@
       "desc": {
         "ar": "طبق أرز مع ٢ ستريبس وصوص.",
         "en": "A serving of rice with 2 chicken strips and sauce."
-      }
+      },
+      "img": "img/dishes/rice-2-strips-sauce.jpg"
     },
     {
       "id": "potato-chicken-magic",
@@ -333,7 +336,8 @@
       "desc": {
         "ar": "بوتاتو تشيكن ماجيك على طريقة كوكي.",
         "en": "Potato Chicken Magic — prepared KOKY-style."
-      }
+      },
+      "img": "img/dishes/potato-chicken-magic.jpg"
     },
     {
       "id": "koky-burger",
