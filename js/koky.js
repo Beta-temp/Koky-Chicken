@@ -74,7 +74,8 @@ const Koky = (() => {
 
   function cardHTML(it) {
     const hasMods = it.mods && it.mods.length;
-    const img = it.img ? `<img src="${esc(it.img)}" alt="${esc(tr(it.name))}" loading="lazy">` : `<svg class="fallback-food-icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#chicken"></use></svg>`;
+    const foodIcon = ({'broasted-chicken-meals':'chicken','chicken-strips-meals':'strips','burgers-sandwiches':'burger','pizza':'pizza','pasta':'pasta','extras':'extras','drinks':'drinks'})[it.cat] || 'chicken';
+    const img = it.img ? `<img src="${esc(it.img)}" alt="${esc(tr(it.name))}" loading="lazy" decoding="async">` : `<div class="food-photo-pending" role="img" aria-label="${esc(tr(it.name))}"><svg class="fallback-food-icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#${foodIcon}"></use></svg><span>PHOTO COMING SOON</span></div>`;
     return `<article class="card">
       ${it.hit ? `<span class="badge-hit">${t('hit')}</span>` : ''}
       <div class="card-img">${img}</div><!-- ФОТО: поле "img" в menu.json, например "img/dishes/${esc(it.id)}.jpg" -->
