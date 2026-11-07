@@ -134,3 +134,29 @@ html[lang="ar"] .brand-wordmark{font-family:'Cairo',sans-serif}
 /* Restaurant map destination link */
 .map-premium{position:relative}.map-open-link{position:absolute;z-index:3;top:1rem;inset-inline-end:1rem;padding:.7rem 1rem;border-radius:999px;background:#f4b51f;color:#1b100b;font-size:.7rem;font-weight:900;letter-spacing:.06em;box-shadow:0 6px 20px #0005}.map-open-link:hover{background:#fff0c7;transform:translateY(-1px)}
 .hero-photo-frame>img,.menu-hero-image img{object-position:center center}
+
+
+/* Mobile navigation and touch-first refinements */
+@media(max-width:720px){
+  .site-header{height:auto;min-height:var(--header-h)}
+  .site-header .container{min-height:var(--header-h);height:auto;flex-wrap:wrap;padding-block:.45rem}
+  .site-header .nav{display:flex;order:3;flex:0 0 100%;width:100%;justify-content:flex-start;gap:1.4rem;overflow-x:auto;overflow-y:hidden;padding:.15rem .1rem .55rem;scrollbar-width:none}
+  .site-header .nav::-webkit-scrollbar{display:none}
+  .site-header .nav a{flex:0 0 auto;font-size:.78rem;padding:.35rem 0}
+  .site-header .header-actions{margin-inline-start:auto}
+  .hero-photo-frame{height:min(86vw,390px)}
+  .hero-title{letter-spacing:-.035em}
+  .hero-proof{flex-wrap:wrap}
+  .contact-details>a,.contact-details>div{min-height:48px}
+  .map-open-link{font-size:.65rem;padding:.65rem .85rem}
+}
+@media(max-width:420px){
+  .container{width:calc(100% - 1.25rem)}
+  .brand-wordmark{font-size:.9rem}
+  .lang-switch{padding:.45rem .65rem}
+  .cart-btn{padding:.45rem .7rem;font-size:.72rem}
+  .cards-premium{grid-template-columns:1fr}
+  .cards-premium .card-img{aspect-ratio:16/9}
+  .cards-premium .card-foot{align-items:center;flex-direction:row}
+  .cards-premium .add-btn{width:auto}
+}
