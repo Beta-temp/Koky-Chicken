@@ -44,3 +44,23 @@ html[lang="ar"] .menu-hero-layout>div:first-child,html[lang="ar"] .menu-intro{te
 .menu-body-premium .card-img .food-photo-pending{display:none}
 .menu-body-premium .card-img img.failed{display:none}
 .menu-body-premium .card-img img.failed + .food-photo-pending{display:flex}
+
+
+/* Mobile menu browsing: visible navigation, swipeable categories, readable product cards */
+@media(max-width:720px){
+  .cat-bar-premium{position:sticky;z-index:20}
+  .cat-tabs{display:flex;overflow-x:auto;overscroll-behavior-inline:contain;scroll-snap-type:x proximity;scrollbar-width:none;padding:.7rem 0}
+  .cat-tabs::-webkit-scrollbar{display:none}
+  .cat-tab{flex:0 0 auto;scroll-snap-align:start;min-height:46px;padding:.45rem .8rem;font-size:.78rem}
+  .menu-body-premium{padding-top:1.8rem}
+  .menu-hero-image{transform:none}
+}
+@media(max-width:420px){
+  .menu-body-premium .cards{grid-template-columns:1fr}
+  .menu-body-premium .card-img{aspect-ratio:16/9}
+  .menu-body-premium .card-body{padding:1rem}
+  .menu-body-premium .card-body h3{font-size:1rem}
+  .menu-body-premium .card-body p{font-size:.8rem;min-height:0}
+  .menu-body-premium .card-foot{flex-direction:row;align-items:center}
+  .menu-body-premium .add-btn{width:auto;min-width:112px}
+}
