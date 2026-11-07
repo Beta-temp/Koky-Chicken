@@ -160,7 +160,6 @@
       "id": "broasted-family-6-pcs",
       "cat": "broasted-chicken-meals",
       "price": 400,
-      "img": "img/dishes/broasted-family-8-pcs.jpg",
       "name": {
         "ar": "وجبة عائلية ٦ قطع",
         "en": "Family Meal — 6 Pcs"
@@ -301,7 +300,6 @@
       "id": "plain-rice",
       "cat": "chicken-strips-meals",
       "price": 70,
-      "img": "img/dishes/broasted-2-pcs.jpg",
       "name": {
         "ar": "أرز سادة",
         "en": "Plain Rice"
@@ -673,7 +671,6 @@
       "id": "sweet-chili-sauce",
       "cat": "extras",
       "price": 30,
-      "img": "img/dishes/big-tasty-sauce.jpg",
       "name": {
         "ar": "صوص سويت تشيلي",
         "en": "Sweet Chili Sauce"
@@ -687,7 +684,6 @@
       "id": "garlic-sauce",
       "cat": "extras",
       "price": 30,
-      "img": "img/dishes/cheese-sauce.jpg",
       "name": {
         "ar": "صوص ثومية",
         "en": "Garlic Sauce"
