@@ -41,7 +41,7 @@ html[lang="ar"] .menu-hero-layout>div:first-child,html[lang="ar"] .menu-intro{te
 .menu-body-premium .food-photo-pending svg{width:48px;height:48px;opacity:.85}
 .menu-body-premium .food-photo-pending span{font-size:.58rem;letter-spacing:.16em;font-weight:800;opacity:.65}
 
-.menu-body-premium .card-img .food-photo-pending{display:none}
+.menu-body-premium .card-img img:not(.failed) + .food-photo-pending{display:none}
 .menu-body-premium .card-img img.failed{display:none}
 .menu-body-premium .card-img img.failed + .food-photo-pending{display:flex}
 
